@@ -1,0 +1,10 @@
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe.config
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\bin\Debug\ProyectoSoftware.pdb
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.csprojResolveAssemblyReference.cache
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Form1.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Properties.Resources.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.GenerateResource.cache
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
