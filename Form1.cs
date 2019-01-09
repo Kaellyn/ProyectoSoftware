@@ -32,5 +32,10 @@ namespace ProyectoSoftware
         {
 
         }
+
+        private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

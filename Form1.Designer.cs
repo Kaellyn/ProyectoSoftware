@@ -32,18 +32,20 @@
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renovarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +69,9 @@
             // 
             // clienteToolStripMenuItem
             // 
+            this.clienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarClienteToolStripMenuItem,
+            this.administrarClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.clienteToolStripMenuItem.Text = "Cliente";
@@ -88,40 +93,6 @@
             this.gimansioToolStripMenuItem.Name = "gimansioToolStripMenuItem";
             this.gimansioToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.gimansioToolStripMenuItem.Text = "Gimansio";
-            // 
-            // administracionDelSistemaToolStripMenuItem
-            // 
-            this.administracionDelSistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administracionDeUsuariosToolStripMenuItem,
-            this.administracionDeParametrosToolStripMenuItem});
-            this.administracionDelSistemaToolStripMenuItem.Name = "administracionDelSistemaToolStripMenuItem";
-            this.administracionDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
-            this.administracionDelSistemaToolStripMenuItem.Text = "Administracion del Sistema";
-            // 
-            // instalacionesToolStripMenuItem
-            // 
-            this.instalacionesToolStripMenuItem.Name = "instalacionesToolStripMenuItem";
-            this.instalacionesToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.instalacionesToolStripMenuItem.Text = "Instalaciones";
-            // 
-            // parametrosToolStripMenuItem
-            // 
-            this.parametrosToolStripMenuItem.Name = "parametrosToolStripMenuItem";
-            this.parametrosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.parametrosToolStripMenuItem.Text = "Parametros";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(147, 20);
-            this.helpToolStripMenuItem.Text = "Movimiento Economico";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem1
-            // 
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem1.Text = "Help";
             // 
             // asistenciaToolStripMenuItem
             // 
@@ -153,6 +124,15 @@
             this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
             // 
+            // administracionDelSistemaToolStripMenuItem
+            // 
+            this.administracionDelSistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administracionDeUsuariosToolStripMenuItem,
+            this.administracionDeParametrosToolStripMenuItem});
+            this.administracionDelSistemaToolStripMenuItem.Name = "administracionDelSistemaToolStripMenuItem";
+            this.administracionDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
+            this.administracionDelSistemaToolStripMenuItem.Text = "Administracion del Sistema";
+            // 
             // administracionDeUsuariosToolStripMenuItem
             // 
             this.administracionDeUsuariosToolStripMenuItem.Name = "administracionDeUsuariosToolStripMenuItem";
@@ -164,6 +144,44 @@
             this.administracionDeParametrosToolStripMenuItem.Name = "administracionDeParametrosToolStripMenuItem";
             this.administracionDeParametrosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.administracionDeParametrosToolStripMenuItem.Text = "Administracion de Parametros";
+            // 
+            // instalacionesToolStripMenuItem
+            // 
+            this.instalacionesToolStripMenuItem.Name = "instalacionesToolStripMenuItem";
+            this.instalacionesToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.instalacionesToolStripMenuItem.Text = "Instalaciones";
+            // 
+            // parametrosToolStripMenuItem
+            // 
+            this.parametrosToolStripMenuItem.Name = "parametrosToolStripMenuItem";
+            this.parametrosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.parametrosToolStripMenuItem.Text = "Parametros";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(147, 20);
+            this.helpToolStripMenuItem.Text = "Movimiento Economico";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem1.Text = "Help";
+            // 
+            // registrarClienteToolStripMenuItem
+            // 
+            this.registrarClienteToolStripMenuItem.Name = "registrarClienteToolStripMenuItem";
+            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.registrarClienteToolStripMenuItem.Text = "Registrar Nuevo Cliente";
+            this.registrarClienteToolStripMenuItem.Click += new System.EventHandler(this.registrarClienteToolStripMenuItem_Click);
+            // 
+            // administrarClienteToolStripMenuItem
+            // 
+            this.administrarClienteToolStripMenuItem.Name = "administrarClienteToolStripMenuItem";
+            this.administrarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.administrarClienteToolStripMenuItem.Text = "Administrar Cliente";
             // 
             // Form1
             // 
@@ -198,6 +216,8 @@
         private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarClienteToolStripMenuItem;
     }
 }
 
