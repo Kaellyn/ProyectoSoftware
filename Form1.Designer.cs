@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,32 +41,12 @@
             this.administracionDeParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimientoEconomico = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEAreaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mEGimnasioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.panelcontrol = new System.Windows.Forms.Panel();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteToolStripMenuItem,
-            this.areaHumedaToolStripMenuItem,
-            this.gimansioToolStripMenuItem,
-            this.administracionDelSistemaToolStripMenuItem,
-            this.instalacionesToolStripMenuItem,
-            this.parametrosToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.helpToolStripMenuItem1});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(1100, 28);
-            this.menuStrip2.TabIndex = 1;
-            this.menuStrip2.Text = "menuStrip2";
-            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // clienteToolStripMenuItem
             // 
@@ -92,35 +71,36 @@
             this.gimansioToolStripMenuItem.Name = "gimansioToolStripMenuItem";
             this.gimansioToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.gimansioToolStripMenuItem.Text = "Gimansio";
+            this.gimansioToolStripMenuItem.Click += new System.EventHandler(this.gimansioToolStripMenuItem_Click);
             // 
             // asistenciaToolStripMenuItem
             // 
             this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
-            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.asistenciaToolStripMenuItem.Text = "Asistencia";
             // 
             // renovarNuevoToolStripMenuItem
             // 
             this.renovarNuevoToolStripMenuItem.Name = "renovarNuevoToolStripMenuItem";
-            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nuevo";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // diarioToolStripMenuItem
             // 
             this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
-            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.diarioToolStripMenuItem.Text = "Diario";
             // 
             // entrenamientoToolStripMenuItem
             // 
             this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
-            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
             // 
             // administracionDelSistemaToolStripMenuItem
@@ -131,6 +111,7 @@
             this.administracionDelSistemaToolStripMenuItem.Name = "administracionDelSistemaToolStripMenuItem";
             this.administracionDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(202, 24);
             this.administracionDelSistemaToolStripMenuItem.Text = "Administracion del Sistema";
+            this.administracionDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.administracionDelSistemaToolStripMenuItem_Click);
             // 
             // administracionDeUsuariosToolStripMenuItem
             // 
@@ -156,39 +137,57 @@
             this.parametrosToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.parametrosToolStripMenuItem.Text = "Parametros";
             // 
-            // helpToolStripMenuItem
+            // movimientoEconomico
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mEAreaHumedaToolStripMenuItem,
-            this.mEGimnasioToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(179, 24);
-            this.helpToolStripMenuItem.Text = "Movimiento Economico";
-            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            this.movimientoEconomico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.movimientoEconomico.Name = "movimientoEconomico";
+            this.movimientoEconomico.Size = new System.Drawing.Size(179, 24);
+            this.movimientoEconomico.Text = "Movimiento Economico";
+            this.movimientoEconomico.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem1.Text = "Help";
+            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
-            // mEAreaHumedaToolStripMenuItem
+            // menuStrip2
             // 
-            this.mEAreaHumedaToolStripMenuItem.Name = "mEAreaHumedaToolStripMenuItem";
-            this.mEAreaHumedaToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.mEAreaHumedaToolStripMenuItem.Text = "M.E. area humeda";
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.areaHumedaToolStripMenuItem,
+            this.gimansioToolStripMenuItem,
+            this.administracionDelSistemaToolStripMenuItem,
+            this.instalacionesToolStripMenuItem,
+            this.parametrosToolStripMenuItem,
+            this.movimientoEconomico,
+            this.helpToolStripMenuItem1});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(1100, 28);
+            this.menuStrip2.TabIndex = 1;
+            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
-            // mEGimnasioToolStripMenuItem
+            // panelcontrol
             // 
-            this.mEGimnasioToolStripMenuItem.Name = "mEGimnasioToolStripMenuItem";
-            this.mEGimnasioToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.mEGimnasioToolStripMenuItem.Text = "M.E. gimnasio";
+            this.panelcontrol.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcontrol.Location = new System.Drawing.Point(0, 28);
+            this.panelcontrol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelcontrol.Name = "panelcontrol";
+            this.panelcontrol.Size = new System.Drawing.Size(1100, 526);
+            this.panelcontrol.TabIndex = 2;
+            this.panelcontrol.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcontrol_Paint);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 554);
+            this.Controls.Add(this.panelcontrol);
             this.Controls.Add(this.menuStrip2);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
@@ -202,24 +201,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem areaHumedaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gimansioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administracionDelSistemaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parametrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renovarNuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administracionDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mEAreaHumedaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mEGimnasioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parametrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movimientoEconomico;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.Panel panelcontrol;
     }
 }
 

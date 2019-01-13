@@ -18,3 +18,4 @@ C:\Users\Master\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csp
 C:\Users\Master\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
 C:\Users\Master\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
 C:\Users\Master\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
+C:\Users\Master\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.Form2.resources
