@@ -46,6 +46,7 @@
             this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +89,7 @@
             this.administrarClienteToolStripMenuItem.Name = "administrarClienteToolStripMenuItem";
             this.administrarClienteToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.administrarClienteToolStripMenuItem.Text = "Administrar Cliente";
+            this.administrarClienteToolStripMenuItem.Click += new System.EventHandler(this.administrarClienteToolStripMenuItem_Click);
             // 
             // areaHumedaToolStripMenuItem
             // 
@@ -184,11 +186,20 @@
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(17, 30);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(792, 341);
+            this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip2);
             this.Name = "Form1";
             this.Text = "TECH-J";
@@ -219,6 +230,7 @@
         private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarClienteToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

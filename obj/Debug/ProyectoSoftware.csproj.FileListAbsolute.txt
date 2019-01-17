@@ -18,3 +18,4 @@ C:\Users\CRS\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj
 C:\Users\CRS\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
 C:\Users\CRS\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
 C:\Users\CRS\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
+C:\Users\CRS\Documents\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.RegistrarCliente.resources
