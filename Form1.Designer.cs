@@ -32,18 +32,19 @@
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renovarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +90,37 @@
             this.gimansioToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.gimansioToolStripMenuItem.Text = "Gimansio";
             // 
+            // asistenciaToolStripMenuItem
+            // 
+            this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
+            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.asistenciaToolStripMenuItem.Text = "Asistencia";
+            this.asistenciaToolStripMenuItem.Click += new System.EventHandler(this.asistenciaToolStripMenuItem_Click);
+            // 
+            // renovarNuevoToolStripMenuItem
+            // 
+            this.renovarNuevoToolStripMenuItem.Name = "renovarNuevoToolStripMenuItem";
+            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nuevo";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // diarioToolStripMenuItem
+            // 
+            this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
+            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.diarioToolStripMenuItem.Text = "Diario";
+            // 
+            // entrenamientoToolStripMenuItem
+            // 
+            this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
+            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
+            // 
             // administracionDelSistemaToolStripMenuItem
             // 
             this.administracionDelSistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -97,6 +129,18 @@
             this.administracionDelSistemaToolStripMenuItem.Name = "administracionDelSistemaToolStripMenuItem";
             this.administracionDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
             this.administracionDelSistemaToolStripMenuItem.Text = "Administracion del Sistema";
+            // 
+            // administracionDeUsuariosToolStripMenuItem
+            // 
+            this.administracionDeUsuariosToolStripMenuItem.Name = "administracionDeUsuariosToolStripMenuItem";
+            this.administracionDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.administracionDeUsuariosToolStripMenuItem.Text = "Administracion de Usuarios";
+            // 
+            // administracionDeParametrosToolStripMenuItem
+            // 
+            this.administracionDeParametrosToolStripMenuItem.Name = "administracionDeParametrosToolStripMenuItem";
+            this.administracionDeParametrosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.administracionDeParametrosToolStripMenuItem.Text = "Administracion de Parametros";
             // 
             // instalacionesToolStripMenuItem
             // 
@@ -123,53 +167,23 @@
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem1.Text = "Help";
             // 
-            // asistenciaToolStripMenuItem
+            // panelContenedor
             // 
-            this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
-            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.asistenciaToolStripMenuItem.Text = "Asistencia";
-            // 
-            // renovarNuevoToolStripMenuItem
-            // 
-            this.renovarNuevoToolStripMenuItem.Name = "renovarNuevoToolStripMenuItem";
-            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nuevo";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // diarioToolStripMenuItem
-            // 
-            this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
-            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.diarioToolStripMenuItem.Text = "Diario";
-            // 
-            // entrenamientoToolStripMenuItem
-            // 
-            this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
-            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
-            // 
-            // administracionDeUsuariosToolStripMenuItem
-            // 
-            this.administracionDeUsuariosToolStripMenuItem.Name = "administracionDeUsuariosToolStripMenuItem";
-            this.administracionDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
-            this.administracionDeUsuariosToolStripMenuItem.Text = "Administracion de Usuarios";
-            // 
-            // administracionDeParametrosToolStripMenuItem
-            // 
-            this.administracionDeParametrosToolStripMenuItem.Name = "administracionDeParametrosToolStripMenuItem";
-            this.administracionDeParametrosToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
-            this.administracionDeParametrosToolStripMenuItem.Text = "Administracion de Parametros";
+            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContenedor.AutoSize = true;
+            this.panelContenedor.Location = new System.Drawing.Point(0, 27);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(825, 425);
+            this.panelContenedor.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(825, 450);
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.menuStrip2);
             this.Name = "Form1";
             this.Text = "TECH-J";
@@ -198,6 +212,7 @@
         private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }
 
