@@ -8,3 +8,13 @@ C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proye
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
+D:\Prueba\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe.config
+D:\Prueba\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe
+D:\Prueba\ProyectoSoftware\bin\Debug\ProyectoSoftware.pdb
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.csprojAssemblyReference.cache
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.Form1.resources
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.Properties.Resources.resources
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.GenerateResource.cache
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
+D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
