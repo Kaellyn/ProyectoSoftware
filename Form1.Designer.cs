@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renovarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suscripcionMensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tarjetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,27 +46,19 @@
             this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip2
+            // panelContenedor
             // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clienteToolStripMenuItem,
-            this.areaHumedaToolStripMenuItem,
-            this.gimansioToolStripMenuItem,
-            this.administracionDelSistemaToolStripMenuItem,
-            this.instalacionesToolStripMenuItem,
-            this.parametrosToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.helpToolStripMenuItem1});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(825, 24);
-            this.menuStrip2.TabIndex = 1;
-            this.menuStrip2.Text = "menuStrip2";
-            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
+            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContenedor.Location = new System.Drawing.Point(0, 27);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(825, 425);
+            this.panelContenedor.TabIndex = 2;
             // 
             // clienteToolStripMenuItem
             // 
@@ -99,9 +93,25 @@
             // 
             // renovarNuevoToolStripMenuItem
             // 
+            this.renovarNuevoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.suscripcionMensualToolStripMenuItem,
+            this.tarjetaToolStripMenuItem});
             this.renovarNuevoToolStripMenuItem.Name = "renovarNuevoToolStripMenuItem";
             this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nuevo";
+            this.renovarNuevoToolStripMenuItem.Click += new System.EventHandler(this.renovarNuevoToolStripMenuItem_Click);
+            // 
+            // suscripcionMensualToolStripMenuItem
+            // 
+            this.suscripcionMensualToolStripMenuItem.Name = "suscripcionMensualToolStripMenuItem";
+            this.suscripcionMensualToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.suscripcionMensualToolStripMenuItem.Text = "Suscripcion Mensual";
+            // 
+            // tarjetaToolStripMenuItem
+            // 
+            this.tarjetaToolStripMenuItem.Name = "tarjetaToolStripMenuItem";
+            this.tarjetaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.tarjetaToolStripMenuItem.Text = "Tarjeta";
             // 
             // consultarToolStripMenuItem
             // 
@@ -167,16 +177,23 @@
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem1.Text = "Help";
             // 
-            // panelContenedor
+            // menuStrip2
             // 
-            this.panelContenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContenedor.AutoSize = true;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 27);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(825, 425);
-            this.panelContenedor.TabIndex = 2;
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.areaHumedaToolStripMenuItem,
+            this.gimansioToolStripMenuItem,
+            this.administracionDelSistemaToolStripMenuItem,
+            this.instalacionesToolStripMenuItem,
+            this.parametrosToolStripMenuItem,
+            this.helpToolStripMenuItem,
+            this.helpToolStripMenuItem1});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(825, 24);
+            this.menuStrip2.TabIndex = 1;
+            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // Form1
             // 
@@ -196,23 +213,25 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem areaHumedaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gimansioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem renovarNuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suscripcionMensualToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tarjetaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parametrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem renovarNuevoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
-        private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.MenuStrip menuStrip2;
     }
 }
 
