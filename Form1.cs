@@ -99,5 +99,70 @@ namespace ProyectoSoftware
             this.panelContenedor.Tag = renovar;
             renovar.Show();
         }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
+            this.WindowState = FormWindowState.Maximized;
+            ConsultarGimnasio consultar = new ConsultarGimnasio();
+            consultar.TopLevel = false;
+            consultar.Dock = DockStyle.Fill;
+            consultar.AutoSize = false;
+            consultar.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+            this.panelContenedor.Controls.Add(consultar);
+            this.panelContenedor.Tag = consultar;
+            consultar.Show();
+        }
+
+        private void diarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
+            this.WindowState = FormWindowState.Maximized;
+            DiarioGimnasio diario = new DiarioGimnasio();
+            diario.TopLevel = false;
+            diario.Dock = DockStyle.Fill;
+            diario.AutoSize = false;
+            diario.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+            this.panelContenedor.Controls.Add(diario);
+            this.panelContenedor.Tag = diario;
+            diario.Show();
+        }
+
+        private void registrarAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
+            this.WindowState = FormWindowState.Maximized;
+            AsistenciaEntrenadorGim asistenciaEntrenadorGim = new AsistenciaEntrenadorGim();
+            asistenciaEntrenadorGim.TopLevel = false;
+            asistenciaEntrenadorGim.Dock = DockStyle.Fill;
+            asistenciaEntrenadorGim.AutoSize = false;
+            asistenciaEntrenadorGim.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+            this.panelContenedor.Controls.Add(asistenciaEntrenadorGim);
+            this.panelContenedor.Tag = asistenciaEntrenadorGim;
+            asistenciaEntrenadorGim.Show();
+
+        }
+
+        private void nuevoEntrenadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
+            this.WindowState = FormWindowState.Maximized;
+            NuevoEntrenadorGim nuevoEntrenadorGim = new NuevoEntrenadorGim();
+            nuevoEntrenadorGim.TopLevel = false;
+            nuevoEntrenadorGim.Dock = DockStyle.Fill;
+            nuevoEntrenadorGim.AutoSize = false;
+            nuevoEntrenadorGim.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+            this.panelContenedor.Controls.Add(nuevoEntrenadorGim);
+            this.panelContenedor.Tag = nuevoEntrenadorGim;
+            nuevoEntrenadorGim.Show();
+        }
     }
 }

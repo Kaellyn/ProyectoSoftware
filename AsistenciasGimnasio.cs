@@ -53,5 +53,49 @@ namespace ProyectoSoftware
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Validar().SoloNumerosSeguidos(e);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String dialogo = "Se registrara la asistencia al Gimnasio del cliente:\n\n\n" +
+                "Nombre: "+textBox2.Text + "\n" +
+                "CI: " + textBox1.Text + "\n" +
+                "Fecha: " + dateTimePicker3.Text + "\n" +
+                "En el horario de: " + textBox5.Text + "\n\n" +
+                "¿Esta seguro de realizar esta accion?";
+
+            int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
+            int countWords = textBox1.Text.Split().Length; // 7
+
+
+            if(countSpaces<=0 && countWords == 1)
+            {
+                DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //do something
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    //do something else
+                }
+            }
+            else
+            {
+                String causa = "cedula";
+                DialogResult dialogResult = MessageBox.Show("Ingreso de "+causa+" incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
+
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

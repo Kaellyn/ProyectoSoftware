@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsistenciaEntrenadorGim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciaEntrenadorGim.Designer.cs">
+      <DependentUpon>AsistenciaEntrenadorGim.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsistenciasGimnasio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,11 +63,29 @@
     <Compile Include="Bienvenida.Designer.cs">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarGimnasio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarGimnasio.Designer.cs">
+      <DependentUpon>ConsultarGimnasio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiarioGimnasio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiarioGimnasio.Designer.cs">
+      <DependentUpon>DiarioGimnasio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoEntrenadorGim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoEntrenadorGim.Designer.cs">
+      <DependentUpon>NuevoEntrenadorGim.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,14 +95,27 @@
     <Compile Include="Renovar-NuevaSuscripcion.Designer.cs">
       <DependentUpon>Renovar-NuevaSuscripcion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validar.cs" />
+    <EmbeddedResource Include="AsistenciaEntrenadorGim.resx">
+      <DependentUpon>AsistenciaEntrenadorGim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsistenciasGimnasio.resx">
       <DependentUpon>AsistenciasGimnasio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarGimnasio.resx">
+      <DependentUpon>ConsultarGimnasio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiarioGimnasio.resx">
+      <DependentUpon>DiarioGimnasio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoEntrenadorGim.resx">
+      <DependentUpon>NuevoEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

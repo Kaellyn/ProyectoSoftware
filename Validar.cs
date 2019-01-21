@@ -47,7 +47,28 @@ namespace ProyectoSoftware
             else
             {
                 v.Handled = true;
-               // MessageBox.Show("Solo Numeros");
+               //MessageBox.Show("Solo Numeros");
+            }
+        }
+
+        public void SoloNumerosSeguidos(KeyPressEventArgs v)
+        {
+            if (Char.IsDigit(v.KeyChar))
+            {
+                v.Handled = false;
+            }
+            else if (Char.IsSeparator(v.KeyChar))
+            {
+                v.Handled = true;
+            }
+            else if (Char.IsControl(v.KeyChar))
+            {
+                v.Handled = false;
+            }
+            else
+            {
+                v.Handled = true;
+                //MessageBox.Show("Solo Numeros");
             }
         }
 

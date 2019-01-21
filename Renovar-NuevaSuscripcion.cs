@@ -23,5 +23,12 @@ namespace ProyectoSoftware
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar validar = new Validar();
+            validar.SoloNumeros(e);
+
+        }
     }
 }

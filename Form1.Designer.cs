@@ -39,6 +39,10 @@
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoEntrenadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verEntrenadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarEntrenadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDeParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,18 +122,51 @@
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
+            this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
             // diarioToolStripMenuItem
             // 
             this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
             this.diarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.diarioToolStripMenuItem.Text = "Diario";
+            this.diarioToolStripMenuItem.Click += new System.EventHandler(this.diarioToolStripMenuItem_Click);
             // 
             // entrenamientoToolStripMenuItem
             // 
+            this.entrenamientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarAsistenciaToolStripMenuItem,
+            this.nuevoEntrenadorToolStripMenuItem,
+            this.verEntrenadoresToolStripMenuItem,
+            this.eliminarEntrenadorToolStripMenuItem});
             this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
             this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
+            // 
+            // registrarAsistenciaToolStripMenuItem
+            // 
+            this.registrarAsistenciaToolStripMenuItem.Name = "registrarAsistenciaToolStripMenuItem";
+            this.registrarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarAsistenciaToolStripMenuItem.Text = "Registrar Asistencia";
+            this.registrarAsistenciaToolStripMenuItem.Click += new System.EventHandler(this.registrarAsistenciaToolStripMenuItem_Click);
+            // 
+            // nuevoEntrenadorToolStripMenuItem
+            // 
+            this.nuevoEntrenadorToolStripMenuItem.Name = "nuevoEntrenadorToolStripMenuItem";
+            this.nuevoEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoEntrenadorToolStripMenuItem.Text = "Nuevo Entrenador";
+            this.nuevoEntrenadorToolStripMenuItem.Click += new System.EventHandler(this.nuevoEntrenadorToolStripMenuItem_Click);
+            // 
+            // verEntrenadoresToolStripMenuItem
+            // 
+            this.verEntrenadoresToolStripMenuItem.Name = "verEntrenadoresToolStripMenuItem";
+            this.verEntrenadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verEntrenadoresToolStripMenuItem.Text = "Ver Entrenadores";
+            // 
+            // eliminarEntrenadorToolStripMenuItem
+            // 
+            this.eliminarEntrenadorToolStripMenuItem.Name = "eliminarEntrenadorToolStripMenuItem";
+            this.eliminarEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarEntrenadorToolStripMenuItem.Text = "Eliminar Entrenador";
             // 
             // administracionDelSistemaToolStripMenuItem
             // 
@@ -232,6 +269,10 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem registrarAsistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoEntrenadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verEntrenadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarEntrenadorToolStripMenuItem;
     }
 }
 
