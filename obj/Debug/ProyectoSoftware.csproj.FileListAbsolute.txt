@@ -18,3 +18,15 @@ D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.GenerateResource.ca
 D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
 D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
 D:\Prueba\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb
+E:\Descargas\ProyectoSoftware-master\bin\Debug\ProyectoSoftware.exe.config
+E:\Descargas\ProyectoSoftware-master\bin\Debug\ProyectoSoftware.exe
+E:\Descargas\ProyectoSoftware-master\bin\Debug\ProyectoSoftware.pdb
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.csprojAssemblyReference.cache
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Form1.resources
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Properties.Resources.resources
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.csproj.GenerateResource.cache
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.exe
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.pdb
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Parametros.resources
+E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Reporte.resources
