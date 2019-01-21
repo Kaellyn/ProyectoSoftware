@@ -31,35 +31,39 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.vpasswordTxt = new System.Windows.Forms.TextBox();
-            this.passwordTxt = new System.Windows.Forms.TextBox();
-            this.loginTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.nombreTxt = new System.Windows.Forms.TextBox();
-            this.apellidoTxt = new System.Windows.Forms.TextBox();
-            this.cedulaTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.telefonoTxt = new System.Windows.Forms.TextBox();
             this.registrar = new System.Windows.Forms.Button();
             this.Cancelar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pnom = new System.Windows.Forms.TextBox();
+            this.snom = new System.Windows.Forms.TextBox();
+            this.papellid = new System.Windows.Forms.TextBox();
+            this.sapellid = new System.Windows.Forms.TextBox();
+            this.ced = new System.Windows.Forms.TextBox();
+            this.tel = new System.Windows.Forms.TextBox();
+            this.log = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
+            this.verpass = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.opciones = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 163);
+            this.label1.Location = new System.Drawing.Point(25, 226);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 229);
+            this.label2.Location = new System.Drawing.Point(25, 301);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -68,37 +72,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 301);
+            this.label3.Location = new System.Drawing.Point(25, 363);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Verificar Password";
             // 
-            // vpasswordTxt
-            // 
-            this.vpasswordTxt.Location = new System.Drawing.Point(24, 326);
-            this.vpasswordTxt.Name = "vpasswordTxt";
-            this.vpasswordTxt.Size = new System.Drawing.Size(159, 20);
-            this.vpasswordTxt.TabIndex = 3;
-            // 
-            // passwordTxt
-            // 
-            this.passwordTxt.Location = new System.Drawing.Point(24, 259);
-            this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(159, 20);
-            this.passwordTxt.TabIndex = 4;
-            // 
-            // loginTxt
-            // 
-            this.loginTxt.Location = new System.Drawing.Point(24, 194);
-            this.loginTxt.Name = "loginTxt";
-            this.loginTxt.Size = new System.Drawing.Size(159, 20);
-            this.loginTxt.TabIndex = 5;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 19);
+            this.label4.Location = new System.Drawing.Point(25, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 6;
@@ -107,7 +90,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(231, 19);
+            this.label5.Location = new System.Drawing.Point(279, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 7;
@@ -116,57 +99,24 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 91);
+            this.label6.Location = new System.Drawing.Point(25, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "Cédula";
             // 
-            // nombreTxt
-            // 
-            this.nombreTxt.Location = new System.Drawing.Point(24, 49);
-            this.nombreTxt.Name = "nombreTxt";
-            this.nombreTxt.Size = new System.Drawing.Size(159, 20);
-            this.nombreTxt.TabIndex = 9;
-            this.nombreTxt.TextChanged += new System.EventHandler(this.nombreTxt_TextChanged);
-            this.nombreTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nombreTxt_KeyPress);
-            // 
-            // apellidoTxt
-            // 
-            this.apellidoTxt.Location = new System.Drawing.Point(234, 49);
-            this.apellidoTxt.Name = "apellidoTxt";
-            this.apellidoTxt.Size = new System.Drawing.Size(159, 20);
-            this.apellidoTxt.TabIndex = 10;
-            this.apellidoTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.apellidoTxt_KeyPress);
-            // 
-            // cedulaTxt
-            // 
-            this.cedulaTxt.Location = new System.Drawing.Point(24, 124);
-            this.cedulaTxt.Name = "cedulaTxt";
-            this.cedulaTxt.Size = new System.Drawing.Size(159, 20);
-            this.cedulaTxt.TabIndex = 11;
-            this.cedulaTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cedulaTxt_KeyPress);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(231, 91);
+            this.label7.Location = new System.Drawing.Point(25, 165);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Teléfono";
             // 
-            // telefonoTxt
-            // 
-            this.telefonoTxt.Location = new System.Drawing.Point(234, 124);
-            this.telefonoTxt.Name = "telefonoTxt";
-            this.telefonoTxt.Size = new System.Drawing.Size(159, 20);
-            this.telefonoTxt.TabIndex = 14;
-            this.telefonoTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.telefonoTxt_KeyPress);
-            // 
             // registrar
             // 
-            this.registrar.Location = new System.Drawing.Point(234, 324);
+            this.registrar.Location = new System.Drawing.Point(187, 391);
             this.registrar.Name = "registrar";
             this.registrar.Size = new System.Drawing.Size(75, 23);
             this.registrar.TabIndex = 15;
@@ -176,7 +126,7 @@
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(361, 326);
+            this.Cancelar.Location = new System.Drawing.Point(428, 391);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(75, 23);
             this.Cancelar.TabIndex = 16;
@@ -184,24 +134,125 @@
             this.Cancelar.UseVisualStyleBackColor = true;
             this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(279, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Tipo";
+            // 
+            // pnom
+            // 
+            this.pnom.Location = new System.Drawing.Point(28, 121);
+            this.pnom.Name = "pnom";
+            this.pnom.Size = new System.Drawing.Size(100, 20);
+            this.pnom.TabIndex = 18;
+            this.pnom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pnom_KeyPress);
+            // 
+            // snom
+            // 
+            this.snom.Location = new System.Drawing.Point(134, 121);
+            this.snom.Name = "snom";
+            this.snom.Size = new System.Drawing.Size(100, 20);
+            this.snom.TabIndex = 19;
+            this.snom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.snom_KeyPress);
+            // 
+            // papellid
+            // 
+            this.papellid.Location = new System.Drawing.Point(282, 121);
+            this.papellid.Name = "papellid";
+            this.papellid.Size = new System.Drawing.Size(100, 20);
+            this.papellid.TabIndex = 20;
+            // 
+            // sapellid
+            // 
+            this.sapellid.Location = new System.Drawing.Point(388, 121);
+            this.sapellid.Name = "sapellid";
+            this.sapellid.Size = new System.Drawing.Size(100, 20);
+            this.sapellid.TabIndex = 21;
+            // 
+            // ced
+            // 
+            this.ced.Location = new System.Drawing.Point(28, 50);
+            this.ced.Name = "ced";
+            this.ced.Size = new System.Drawing.Size(206, 20);
+            this.ced.TabIndex = 22;
+            this.ced.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ced_KeyPress);
+            // 
+            // tel
+            // 
+            this.tel.Location = new System.Drawing.Point(28, 192);
+            this.tel.Name = "tel";
+            this.tel.Size = new System.Drawing.Size(206, 20);
+            this.tel.TabIndex = 23;
+            this.tel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tel_KeyPress);
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(28, 261);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(100, 20);
+            this.log.TabIndex = 24;
+            // 
+            // pass
+            // 
+            this.pass.Location = new System.Drawing.Point(28, 327);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(100, 20);
+            this.pass.TabIndex = 25;
+            // 
+            // verpass
+            // 
+            this.verpass.Location = new System.Drawing.Point(28, 393);
+            this.verpass.Name = "verpass";
+            this.verpass.Size = new System.Drawing.Size(100, 20);
+            this.verpass.TabIndex = 26;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(307, 391);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // opciones
+            // 
+            this.opciones.FormattingEnabled = true;
+            this.opciones.Location = new System.Drawing.Point(282, 49);
+            this.opciones.Name = "opciones";
+            this.opciones.Size = new System.Drawing.Size(206, 21);
+            this.opciones.TabIndex = 28;
+            this.opciones.SelectedIndexChanged += new System.EventHandler(this.opciones_SelectedIndexChanged);
+            this.opciones.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.opciones_KeyPress);
+            // 
             // RegistrarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 367);
+            this.ClientSize = new System.Drawing.Size(570, 440);
+            this.Controls.Add(this.opciones);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.verpass);
+            this.Controls.Add(this.pass);
+            this.Controls.Add(this.log);
+            this.Controls.Add(this.tel);
+            this.Controls.Add(this.ced);
+            this.Controls.Add(this.sapellid);
+            this.Controls.Add(this.papellid);
+            this.Controls.Add(this.snom);
+            this.Controls.Add(this.pnom);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.registrar);
-            this.Controls.Add(this.telefonoTxt);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cedulaTxt);
-            this.Controls.Add(this.apellidoTxt);
-            this.Controls.Add(this.nombreTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.loginTxt);
-            this.Controls.Add(this.passwordTxt);
-            this.Controls.Add(this.vpasswordTxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -220,18 +271,23 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox vpasswordTxt;
-        private System.Windows.Forms.TextBox passwordTxt;
-        private System.Windows.Forms.TextBox loginTxt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox nombreTxt;
-        private System.Windows.Forms.TextBox apellidoTxt;
-        private System.Windows.Forms.TextBox cedulaTxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox telefonoTxt;
         private System.Windows.Forms.Button registrar;
         private System.Windows.Forms.Button Cancelar;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox pnom;
+        private System.Windows.Forms.TextBox snom;
+        private System.Windows.Forms.TextBox papellid;
+        private System.Windows.Forms.TextBox sapellid;
+        private System.Windows.Forms.TextBox ced;
+        private System.Windows.Forms.TextBox tel;
+        private System.Windows.Forms.TextBox log;
+        private System.Windows.Forms.TextBox pass;
+        private System.Windows.Forms.TextBox verpass;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox opciones;
     }
 }

@@ -18,7 +18,7 @@ namespace ProyectoSoftware
             }
             else if (Char.IsSeparator(v.KeyChar))
             {
-                v.Handled = false;
+                v.Handled = true;
             }
             else if (Char.IsControl(v.KeyChar))
             {
