@@ -30,3 +30,15 @@ E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.exe
 E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.pdb
 E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Parametros.resources
 E:\Descargas\ProyectoSoftware-master\obj\Debug\ProyectoSoftware.Reporte.resources
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe.config
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\bin\Debug\ProyectoSoftware.exe
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\bin\Debug\ProyectoSoftware.pdb
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csprojAssemblyReference.cache
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.Form1.resources
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.Parametros.resources
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.Properties.Resources.resources
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.Reporte.resources
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.GenerateResource.cache
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.csproj.CoreCompileInputs.cache
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.exe
+C:\Users\andyr\OneDrive\Documentos\GitHub\ProyectoSoftware\obj\Debug\ProyectoSoftware.pdb

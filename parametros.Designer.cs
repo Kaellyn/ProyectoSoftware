@@ -60,18 +60,21 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Atras";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox6
             // 
             this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 5);
-            this.textBox6.Location = new System.Drawing.Point(680, 212);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox6, 3);
+            this.textBox6.Location = new System.Drawing.Point(784, 213);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(252, 22);
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(148, 22);
             this.textBox6.TabIndex = 26;
+            this.textBox6.Text = "20";
             // 
             // label7
             // 
@@ -79,13 +82,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label7, 2);
-            this.label7.Location = new System.Drawing.Point(576, 208);
+            this.tableLayoutPanel1.SetColumnSpan(this.label7, 4);
+            this.label7.Location = new System.Drawing.Point(576, 209);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 26);
+            this.label7.Size = new System.Drawing.Size(200, 25);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Telefono";
+            this.label7.Text = "Plan 15 dias";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textBox5
@@ -93,12 +96,14 @@
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox5, 5);
-            this.textBox5.Location = new System.Drawing.Point(160, 212);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox5, 3);
+            this.textBox5.Location = new System.Drawing.Point(264, 213);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(252, 22);
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(148, 22);
             this.textBox5.TabIndex = 24;
+            this.textBox5.Text = "3";
             // 
             // label6
             // 
@@ -106,13 +111,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label6, 2);
-            this.label6.Location = new System.Drawing.Point(56, 208);
+            this.tableLayoutPanel1.SetColumnSpan(this.label6, 4);
+            this.label6.Location = new System.Drawing.Point(56, 209);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 26);
+            this.label6.Size = new System.Drawing.Size(200, 25);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Cedula";
+            this.label6.Text = "Gimnasio";
             // 
             // label1
             // 
@@ -133,13 +138,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label2, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.label2, 4);
             this.label2.Location = new System.Drawing.Point(56, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 26);
+            this.label2.Size = new System.Drawing.Size(200, 26);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Cedula";
+            this.label2.Text = " Área Húmeda";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label5
@@ -148,49 +153,56 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label5, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.label5, 4);
             this.label5.Location = new System.Drawing.Point(56, 130);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 26);
+            this.label5.Size = new System.Drawing.Size(200, 26);
             this.label5.TabIndex = 17;
-            this.label5.Text = "Direccion";
+            this.label5.Text = "Adulto mayor y Niños";
             // 
             // textBox4
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 5);
-            this.textBox4.Location = new System.Drawing.Point(160, 134);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox4, 3);
+            this.textBox4.Location = new System.Drawing.Point(264, 134);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 22);
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(148, 22);
             this.textBox4.TabIndex = 19;
+            this.textBox4.Text = "3.50";
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 5);
-            this.textBox1.Location = new System.Drawing.Point(160, 56);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox1, 3);
+            this.textBox1.Location = new System.Drawing.Point(264, 56);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 22);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(148, 22);
             this.textBox1.TabIndex = 15;
+            this.textBox1.Text = "7";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 5);
-            this.textBox2.Location = new System.Drawing.Point(680, 56);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 3);
+            this.textBox2.Location = new System.Drawing.Point(784, 56);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 22);
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(148, 22);
             this.textBox2.TabIndex = 16;
+            this.textBox2.Text = "30";
             // 
             // label3
             // 
@@ -198,13 +210,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label3, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.label3, 4);
             this.label3.Location = new System.Drawing.Point(576, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 26);
+            this.label3.Size = new System.Drawing.Size(200, 26);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Nombres";
+            this.label3.Text = "Plan mensual";
             // 
             // label4
             // 
@@ -212,25 +224,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.label4, 4);
             this.label4.Location = new System.Drawing.Point(576, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 26);
+            this.label4.Size = new System.Drawing.Size(200, 26);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Telefono";
+            this.label4.Text = "Plan 12 dias";
             // 
             // textBox3
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 5);
-            this.textBox3.Location = new System.Drawing.Point(680, 134);
+            this.tableLayoutPanel1.SetColumnSpan(this.textBox3, 3);
+            this.textBox3.Location = new System.Drawing.Point(784, 134);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 22);
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(148, 22);
             this.textBox3.TabIndex = 20;
+            this.textBox3.Text = "15";
             // 
             // tableLayoutPanel1
             // 
@@ -283,8 +297,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.212355F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.826255F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.113636F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.734848F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -300,6 +314,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1057, 549);
             this.tableLayoutPanel1.TabIndex = 26;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // Parametros
             // 

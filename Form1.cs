@@ -77,6 +77,7 @@ namespace ProyectoSoftware
             par.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
             this.panelContenedor.Controls.Add(par);
             this.panelContenedor.Tag = par;
+           
             par.Show();
         }
 
