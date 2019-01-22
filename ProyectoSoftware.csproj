@@ -45,6 +45,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="ActualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarUsuario.Designer.cs">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionSqlServer.cs" />
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.cs">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstalacionPiscina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstalacionPiscina.Designer.cs">
+      <DependentUpon>InstalacionPiscina.cs</DependentUpon>
+    </Compile>
+>>>>>>> jonathanAdministracionSistema
     <Compile Include="Validar.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -52,10 +92,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuario.Designer.cs">
+      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarParametro.Designer.cs">
+      <DependentUpon>ActualizarParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarUsuario.Designer.cs">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Designer.cs">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarUsuario.resx">
+      <DependentUpon>ActualizarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuario.resx">
+      <DependentUpon>ConsultarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstalacionPiscina.resx">
+      <DependentUpon>InstalacionPiscina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +160,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarParametro.resx">
+      <DependentUpon>ActualizarParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad.resx">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
