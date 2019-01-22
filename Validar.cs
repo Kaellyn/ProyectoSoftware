@@ -9,6 +9,10 @@ namespace ProyectoSoftware
 {
     class Validar
     {
+<<<<<<< HEAD
+=======
+
+>>>>>>> jonathanAdministracionSistema
         public  void SoloLetras(KeyPressEventArgs v)
         {
             if (Char.IsLetter(v.KeyChar))
@@ -17,7 +21,11 @@ namespace ProyectoSoftware
             }
             else if (Char.IsSeparator(v.KeyChar))
             {
+<<<<<<< HEAD
                 v.Handled = false;
+=======
+                v.Handled = true;
+>>>>>>> jonathanAdministracionSistema
             }
             else if (Char.IsControl(v.KeyChar))
             {
@@ -47,7 +55,11 @@ namespace ProyectoSoftware
             else
             {
                 v.Handled = true;
+<<<<<<< HEAD
                // MessageBox.Show("Solo Numeros");
+=======
+            //    MessageBox.Show("Solo Numeros");
+>>>>>>> jonathanAdministracionSistema
             }
         }
 
@@ -76,8 +88,11 @@ namespace ProyectoSoftware
             }
         }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> jonathanAdministracionSistema
     }
 }
