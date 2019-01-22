@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCliente.Designer.cs" />
     <Compile Include="ActualizarDatosInstruAH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +61,14 @@
     <Compile Include="ActualizarEntrenadorGim.Designer.cs">
       <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
     </Compile>
+    <Compile Include="ActualizarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarParametro.Designer.cs" />
+    <Compile Include="ActualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarUsuario.Designer.cs" />
     <Compile Include="AsistenciaAH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,24 +99,41 @@
     <Compile Include="Bienvenida.Designer.cs">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs" />
+    <Compile Include="ConexionSqlServer.cs" />
     <Compile Include="ConsultarAsistenciasAH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarAsistenciasAH.Designer.cs">
       <DependentUpon>ConsultarAsistenciasAH.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs" />
     <Compile Include="ConsultarGimnasio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarGimnasio.Designer.cs">
       <DependentUpon>ConsultarGimnasio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuario.Designer.cs" />
     <Compile Include="DiarioGimnasio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DiarioGimnasio.Designer.cs">
       <DependentUpon>DiarioGimnasio.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.cs" />
     <Compile Include="EliminarEntrenadorGim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,12 +146,20 @@
     <Compile Include="EliminarInstructorAH.Designer.cs">
       <DependentUpon>EliminarInstructorAH.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstalacionPiscina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstalacionPiscina.Designer.cs" />
     <Compile Include="NuevoEntrenadorGim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +174,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarUsuario.Designer.cs" />
     <Compile Include="RegistroDiarioAH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +202,10 @@
     <Compile Include="Renovar-NuevoCursoAH.Designer.cs">
       <DependentUpon>Renovar-NuevoCursoAH.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Designer.cs" />
     <Compile Include="Validar.cs" />
     <Compile Include="VerEntrenadoresGim.cs">
       <SubType>Form</SubType>
@@ -174,12 +219,15 @@
     <Compile Include="VerInstructoresAH.Designer.cs">
       <DependentUpon>VerInstructoresAH.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActualizarCliente.resx" />
     <EmbeddedResource Include="ActualizarDatosInstruAH.resx">
       <DependentUpon>ActualizarDatosInstruAH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ActualizarEntrenadorGim.resx">
       <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarParametro.resx" />
+    <EmbeddedResource Include="ActualizarUsuario.resx" />
     <EmbeddedResource Include="AsistenciaAH.resx">
       <DependentUpon>AsistenciaAH.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,24 +243,30 @@
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx" />
     <EmbeddedResource Include="ConsultarAsistenciasAH.resx">
       <DependentUpon>ConsultarAsistenciasAH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx" />
     <EmbeddedResource Include="ConsultarGimnasio.resx">
       <DependentUpon>ConsultarGimnasio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarUsuario.resx" />
     <EmbeddedResource Include="DiarioGimnasio.resx">
       <DependentUpon>DiarioGimnasio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx" />
     <EmbeddedResource Include="EliminarEntrenadorGim.resx">
       <DependentUpon>EliminarEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarInstructorAH.resx">
       <DependentUpon>EliminarInstructorAH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuario.resx" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstalacionPiscina.resx" />
     <EmbeddedResource Include="NuevoEntrenadorGim.resx">
       <DependentUpon>NuevoEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +283,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrarUsuario.resx" />
     <EmbeddedResource Include="RegistroDiarioAH.resx">
       <DependentUpon>RegistroDiarioAH.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +296,7 @@
     <EmbeddedResource Include="Renovar-NuevoCursoAH.resx">
       <DependentUpon>Renovar-NuevoCursoAH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad.resx" />
     <EmbeddedResource Include="VerEntrenadoresGim.resx">
       <DependentUpon>VerEntrenadoresGim.cs</DependentUpon>
     </EmbeddedResource>

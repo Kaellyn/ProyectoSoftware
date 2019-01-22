@@ -28,3 +28,14 @@ C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proye
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarDatosInstruAH.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.VerInstructoresAH.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.EliminarInstructorAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarCliente.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarParametro.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarUsuario.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Cliente.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ConsultarCliente.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ConsultarUsuario.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.EliminarCliente.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.EliminarUsuario.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.InstalacionPiscina.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.RegistrarUsuario.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Seguridad.resources
