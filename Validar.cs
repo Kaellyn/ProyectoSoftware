@@ -9,7 +9,6 @@ namespace ProyectoSoftware
 {
     class Validar
     {
-
         public  void SoloLetras(KeyPressEventArgs v)
         {
             if (Char.IsLetter(v.KeyChar))
@@ -18,7 +17,7 @@ namespace ProyectoSoftware
             }
             else if (Char.IsSeparator(v.KeyChar))
             {
-                v.Handled = true;
+                v.Handled = false;
             }
             else if (Char.IsControl(v.KeyChar))
             {
@@ -48,7 +47,6 @@ namespace ProyectoSoftware
             else
             {
                 v.Handled = true;
-<<<<<<< HEAD
                //MessageBox.Show("Solo Numeros");
             }
         }
@@ -71,9 +69,6 @@ namespace ProyectoSoftware
             {
                 v.Handled = true;
                 //MessageBox.Show("Solo Numeros");
-=======
-            //    MessageBox.Show("Solo Numeros");
->>>>>>> master2
             }
         }
 
@@ -125,6 +120,9 @@ namespace ProyectoSoftware
                 // MessageBox.Show("Solo numeros o numeros con punto decimal");
             }
         }
+
+
+
 
     }
 }
