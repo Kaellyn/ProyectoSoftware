@@ -1,0 +1,6 @@
+
+*.exe
+bin/Debug/ProyectoSoftware.pdb
+obj/Debug/ProyectoSoftware.csproj.GenerateResource.cache
+obj/Debug/ProyectoSoftware.exe
+obj/Debug/ProyectoSoftware.pdb
