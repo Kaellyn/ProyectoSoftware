@@ -39,3 +39,5 @@ C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proye
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.InstalacionPiscina.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.RegistrarUsuario.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Seguridad.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.parametros.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Reporte.resources

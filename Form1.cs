@@ -74,6 +74,32 @@ namespace ProyectoSoftware
 
         }
 
+        private void mostrarInstalacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void verReporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Reporte>();
+        }
+
+        private void parametrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void verParametrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Parametros>();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void renovarNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<Renovar_NuevaSuscripcion>();
@@ -355,5 +381,6 @@ namespace ProyectoSoftware
             //this.panelContenedor.Tag = piscina;
             //piscina.Show();
         }
+
     }
 }

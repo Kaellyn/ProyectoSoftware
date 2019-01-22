@@ -66,12 +66,17 @@
             this.administracionDeParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarParámetroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.piscinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gymToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarInstalacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verParametrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,37 +105,30 @@
             // registrarClienteToolStripMenuItem
             // 
             this.registrarClienteToolStripMenuItem.Name = "registrarClienteToolStripMenuItem";
-            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.registrarClienteToolStripMenuItem.Text = "Registrar Cliente";
             this.registrarClienteToolStripMenuItem.Click += new System.EventHandler(this.registrarClienteToolStripMenuItem_Click);
             // 
             // eliminarClienteToolStripMenuItem
             // 
             this.eliminarClienteToolStripMenuItem.Name = "eliminarClienteToolStripMenuItem";
-            this.eliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.eliminarClienteToolStripMenuItem.Text = "Eliminar Cliente";
             this.eliminarClienteToolStripMenuItem.Click += new System.EventHandler(this.eliminarClienteToolStripMenuItem_Click);
             // 
             // consultarClienteToolStripMenuItem
             // 
             this.consultarClienteToolStripMenuItem.Name = "consultarClienteToolStripMenuItem";
-            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.consultarClienteToolStripMenuItem.Text = "Consultar Cliente";
             this.consultarClienteToolStripMenuItem.Click += new System.EventHandler(this.consultarClienteToolStripMenuItem_Click);
             // 
             // actualizarClienteToolStripMenuItem
             // 
             this.actualizarClienteToolStripMenuItem.Name = "actualizarClienteToolStripMenuItem";
-            this.actualizarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.actualizarClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.actualizarClienteToolStripMenuItem.Text = "Actualizar Cliente";
             this.actualizarClienteToolStripMenuItem.Click += new System.EventHandler(this.actualizarClienteToolStripMenuItem_Click);
-            // 
-            // areaHumedaToolStripMenuItem
-            // 
-            this.areaHumedaToolStripMenuItem.Name = "areaHumedaToolStripMenuItem";
-            this.areaHumedaToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.areaHumedaToolStripMenuItem.Text = "Area Humeda";
-            // 
             // 
             // areaHumedaToolStripMenuItem
             // 
@@ -241,9 +239,6 @@
             // 
             // asistenciaToolStripMenuItem
             // 
-            this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
-            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.asistenciaToolStripMenuItem.Text = "Asistencia";
             this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
             this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.asistenciaToolStripMenuItem.Text = "Registrar Asistencia Gim";
@@ -391,18 +386,51 @@
             this.instalacionesToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.instalacionesToolStripMenuItem.Text = "Instalaciones";
             // 
+            // piscinasToolStripMenuItem
+            // 
+            this.piscinasToolStripMenuItem.Name = "piscinasToolStripMenuItem";
+            this.piscinasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.piscinasToolStripMenuItem.Text = "Piscinas";
+            this.piscinasToolStripMenuItem.Click += new System.EventHandler(this.piscinasToolStripMenuItem_Click);
+            // 
+            // gymToolStripMenuItem
+            // 
+            this.gymToolStripMenuItem.Name = "gymToolStripMenuItem";
+            this.gymToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gymToolStripMenuItem.Text = "Gym";
+            this.gymToolStripMenuItem.Visible = false;
+            // 
             // parametrosToolStripMenuItem
             // 
+            this.parametrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verParametrosToolStripMenuItem});
             this.parametrosToolStripMenuItem.Name = "parametrosToolStripMenuItem";
-            this.parametrosToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.parametrosToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.parametrosToolStripMenuItem.Text = "Parametros";
+            this.parametrosToolStripMenuItem.Click += new System.EventHandler(this.parametrosToolStripMenuItem_Click);
+            // 
+            // verParametrosToolStripMenuItem
+            // 
+            this.verParametrosToolStripMenuItem.Name = "verParametrosToolStripMenuItem";
+            this.verParametrosToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.verParametrosToolStripMenuItem.Text = "Ver Parametros";
+            this.verParametrosToolStripMenuItem.Click += new System.EventHandler(this.verParametrosToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verReporteToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(147, 20);
             this.helpToolStripMenuItem.Text = "Movimiento Economico";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // verReporteToolStripMenuItem
+            // 
+            this.verReporteToolStripMenuItem.Name = "verReporteToolStripMenuItem";
+            this.verReporteToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.verReporteToolStripMenuItem.Text = "Ver Reporte";
+            this.verReporteToolStripMenuItem.Click += new System.EventHandler(this.verReporteToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem1
             // 
@@ -428,19 +456,6 @@
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
-            // piscinasToolStripMenuItem
-            // 
-            this.piscinasToolStripMenuItem.Name = "piscinasToolStripMenuItem";
-            this.piscinasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.piscinasToolStripMenuItem.Text = "Piscinas";
-            this.piscinasToolStripMenuItem.Click += new System.EventHandler(this.piscinasToolStripMenuItem_Click);
-            // 
-            // gymToolStripMenuItem
-            // 
-            this.gymToolStripMenuItem.Name = "gymToolStripMenuItem";
-            this.gymToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gymToolStripMenuItem.Text = "Gym";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,16 +474,21 @@
         }
 
         #endregion
+        private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem areaHumedaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gimansioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administracionDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem parametrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renovarNuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administracionDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarUsuarioToolStripMenuItem;
@@ -476,11 +496,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarUusuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administracionDeParametrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarParámetroToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem instalacionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parametrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem registrarAsistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoEntrenadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verEntrenadoresToolStripMenuItem;
@@ -503,6 +518,10 @@
         private System.Windows.Forms.ToolStripMenuItem actualizarClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem piscinasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gymToolStripMenuItem;
+
+        private System.Windows.Forms.ToolStripMenuItem mostrarInstalacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verParametrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verReporteToolStripMenuItem;
 
     }
 }
