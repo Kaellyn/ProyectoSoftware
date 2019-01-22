@@ -182,9 +182,9 @@ namespace ProyectoSoftware
 
                         try
                         {
-                            cmd = new SqlCommand("insert into usuario(cedula,pnombre,snombre,papellido,sapellido,telefono,logins,passwords) " +
-                                "values ('" + cedula + "','" + pNombre + "','" + sNombre + "','" + pApellido + "','" + sApellido + "','" + telefono + "','" + login + "','" + password + "')", cn.AbrirConexion());
-                            cmd.ExecuteNonQuery();
+                         //   cmd = new SqlCommand("insert into usuario(cedula,pnombre,snombre,papellido,sapellido,telefono,logins,passwords) " +
+                         //       "values ('" + cedula + "','" + pNombre + "','" + sNombre + "','" + pApellido + "','" + sApellido + "','" + telefono + "','" + login + "','" + password + "')", cn.AbrirConexion());
+                         //   cmd.ExecuteNonQuery();
                         }
 
                         catch (Exception ex)

@@ -29,12 +29,12 @@ namespace ProyectoSoftware
 
         private void button1_Click(object sender, EventArgs e)
         {
-            consulUser = conUsuario.Text;
+            //consulUser = conUsuario.Text;
             
            
 
-                ConexionSqlServer con = new ConexionSqlServer();
-                con.Mostrar(tableUsuario, consulUser);
+            //    ConexionSqlServer con = new ConexionSqlServer();
+            //    con.Mostrar(tableUsuario, consulUser);
         }
 
         private void conUsuario_KeyPress(object sender, KeyPressEventArgs e)
@@ -45,8 +45,8 @@ namespace ProyectoSoftware
 
         private void ConsultarUsuario_Load(object sender, EventArgs e)
         {
-            ConexionSqlServer con = new ConexionSqlServer();
-            con.Mostrar(tableUsuario,"");
+           // ConexionSqlServer con = new ConexionSqlServer();
+           // con.Mostrar(tableUsuario,"");
         }
     }
 }
