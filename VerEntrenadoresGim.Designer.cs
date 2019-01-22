@@ -77,7 +77,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label7, 10, 3);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 5, 3);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 11, 3);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(-2, 1);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(-2, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 20;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class AsistenciaEntrenadorGim : Form
+    public partial class AsistenciaAH : Form
     {
-        public AsistenciaEntrenadorGim()
+        public AsistenciaAH()
         {
             InitializeComponent();
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
@@ -21,11 +21,12 @@ namespace ProyectoSoftware
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String dialogo = "Se registrará la asistencia al Gimnasio del entrenador:\n\n" +
-               "Nombre del Entrenador: " + textBox2.Text + "\n" +
-               "CI del Entrenador: " + textBox1.Text + "\n" +
-               "Fecha: " + dateTimePicker3.Text + "\n\n" +
-               "¿Está seguro de realizar esta acción?";
+            dateTimePicker3.Value = DateTime.Now;
+            String dialogo = "Se registrará la asistencia al Area Humeda del cliente:\n\n" +
+                "Nombre del Cliente: " + textBox2.Text + "\n" +
+                "CI del Cliente: " + textBox1.Text + "\n" +
+                "Fecha: " + dateTimePicker3.Value.ToString() + "\n\n" +
+                "¿Está seguro de realizar esta acción?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7
@@ -65,19 +66,8 @@ namespace ProyectoSoftware
                 {
                     causa = "cedula";
                     DialogResult dialogResult = MessageBox.Show("Ingreso de " + causa + " incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
-
                 }
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -105,7 +95,13 @@ namespace ProyectoSoftware
                 textBox2.Text = "Aguilar Quezada Henry Gonzalo";
                 textBox4.Text = "Carapungo, Ciu. Alegria";
                 textBox3.Text = "099584----";
+                
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

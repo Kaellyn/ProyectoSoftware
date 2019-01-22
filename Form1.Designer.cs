@@ -31,6 +31,17 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.areaHumedaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarAsistenciaAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renovarNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renovarNuevaTarjetaAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarAsistenciasAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.diarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.instructoresAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asistenciaInstructorAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoInstructorAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarDatosInstructorAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verInstructoresAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarInstructorAHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renovarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,9 +82,98 @@
             // 
             // areaHumedaToolStripMenuItem
             // 
+            this.areaHumedaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarAsistenciaAHToolStripMenuItem,
+            this.renovarNuevaToolStripMenuItem,
+            this.renovarNuevaTarjetaAHToolStripMenuItem,
+            this.consultarAsistenciasAHToolStripMenuItem,
+            this.diarioToolStripMenuItem1,
+            this.instructoresAHToolStripMenuItem});
             this.areaHumedaToolStripMenuItem.Name = "areaHumedaToolStripMenuItem";
             this.areaHumedaToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.areaHumedaToolStripMenuItem.Text = "Area Humeda";
+            this.areaHumedaToolStripMenuItem.Text = "Área Húmeda";
+            // 
+            // registrarAsistenciaAHToolStripMenuItem
+            // 
+            this.registrarAsistenciaAHToolStripMenuItem.Name = "registrarAsistenciaAHToolStripMenuItem";
+            this.registrarAsistenciaAHToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.registrarAsistenciaAHToolStripMenuItem.Text = "Registrar Asistencia AH";
+            this.registrarAsistenciaAHToolStripMenuItem.Click += new System.EventHandler(this.registrarAsistenciaAHToolStripMenuItem_Click);
+            // 
+            // renovarNuevaToolStripMenuItem
+            // 
+            this.renovarNuevaToolStripMenuItem.Name = "renovarNuevaToolStripMenuItem";
+            this.renovarNuevaToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.renovarNuevaToolStripMenuItem.Text = "Renovar/Nueva Suscripción Curso";
+            this.renovarNuevaToolStripMenuItem.Click += new System.EventHandler(this.renovarNuevaToolStripMenuItem_Click);
+            // 
+            // renovarNuevaTarjetaAHToolStripMenuItem
+            // 
+            this.renovarNuevaTarjetaAHToolStripMenuItem.Name = "renovarNuevaTarjetaAHToolStripMenuItem";
+            this.renovarNuevaTarjetaAHToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.renovarNuevaTarjetaAHToolStripMenuItem.Text = "Renovar/Nueva Tarjeta AH";
+            this.renovarNuevaTarjetaAHToolStripMenuItem.Click += new System.EventHandler(this.renovarNuevaTarjetaAHToolStripMenuItem_Click);
+            // 
+            // consultarAsistenciasAHToolStripMenuItem
+            // 
+            this.consultarAsistenciasAHToolStripMenuItem.Name = "consultarAsistenciasAHToolStripMenuItem";
+            this.consultarAsistenciasAHToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.consultarAsistenciasAHToolStripMenuItem.Text = "Consultar Asistencias AH";
+            this.consultarAsistenciasAHToolStripMenuItem.Click += new System.EventHandler(this.consultarAsistenciasAHToolStripMenuItem_Click);
+            // 
+            // diarioToolStripMenuItem1
+            // 
+            this.diarioToolStripMenuItem1.Name = "diarioToolStripMenuItem1";
+            this.diarioToolStripMenuItem1.Size = new System.Drawing.Size(254, 22);
+            this.diarioToolStripMenuItem1.Text = "Registro Diarios AH";
+            this.diarioToolStripMenuItem1.Click += new System.EventHandler(this.diarioToolStripMenuItem1_Click);
+            // 
+            // instructoresAHToolStripMenuItem
+            // 
+            this.instructoresAHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asistenciaInstructorAHToolStripMenuItem,
+            this.nuevoInstructorAHToolStripMenuItem,
+            this.actualizarDatosInstructorAHToolStripMenuItem,
+            this.verInstructoresAHToolStripMenuItem,
+            this.eliminarInstructorAHToolStripMenuItem});
+            this.instructoresAHToolStripMenuItem.Name = "instructoresAHToolStripMenuItem";
+            this.instructoresAHToolStripMenuItem.Size = new System.Drawing.Size(254, 22);
+            this.instructoresAHToolStripMenuItem.Text = "Instructores AH";
+            // 
+            // asistenciaInstructorAHToolStripMenuItem
+            // 
+            this.asistenciaInstructorAHToolStripMenuItem.Name = "asistenciaInstructorAHToolStripMenuItem";
+            this.asistenciaInstructorAHToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.asistenciaInstructorAHToolStripMenuItem.Text = "Asistencia Instructor AH";
+            this.asistenciaInstructorAHToolStripMenuItem.Click += new System.EventHandler(this.asistenciaInstructorAHToolStripMenuItem_Click);
+            // 
+            // nuevoInstructorAHToolStripMenuItem
+            // 
+            this.nuevoInstructorAHToolStripMenuItem.Name = "nuevoInstructorAHToolStripMenuItem";
+            this.nuevoInstructorAHToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.nuevoInstructorAHToolStripMenuItem.Text = "Nuevo Instructor AH";
+            this.nuevoInstructorAHToolStripMenuItem.Click += new System.EventHandler(this.nuevoInstructorAHToolStripMenuItem_Click);
+            // 
+            // actualizarDatosInstructorAHToolStripMenuItem
+            // 
+            this.actualizarDatosInstructorAHToolStripMenuItem.Name = "actualizarDatosInstructorAHToolStripMenuItem";
+            this.actualizarDatosInstructorAHToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.actualizarDatosInstructorAHToolStripMenuItem.Text = "Actualizar Datos Instructor AH";
+            this.actualizarDatosInstructorAHToolStripMenuItem.Click += new System.EventHandler(this.actualizarDatosInstructorAHToolStripMenuItem_Click);
+            // 
+            // verInstructoresAHToolStripMenuItem
+            // 
+            this.verInstructoresAHToolStripMenuItem.Name = "verInstructoresAHToolStripMenuItem";
+            this.verInstructoresAHToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.verInstructoresAHToolStripMenuItem.Text = "Ver Instructores AH";
+            this.verInstructoresAHToolStripMenuItem.Click += new System.EventHandler(this.verInstructoresAHToolStripMenuItem_Click);
+            // 
+            // eliminarInstructorAHToolStripMenuItem
+            // 
+            this.eliminarInstructorAHToolStripMenuItem.Name = "eliminarInstructorAHToolStripMenuItem";
+            this.eliminarInstructorAHToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.eliminarInstructorAHToolStripMenuItem.Text = "Eliminar Instructor AH";
+            this.eliminarInstructorAHToolStripMenuItem.Click += new System.EventHandler(this.eliminarInstructorAHToolStripMenuItem_Click);
             // 
             // gimansioToolStripMenuItem
             // 
@@ -91,7 +191,7 @@
             // 
             this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
             this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.asistenciaToolStripMenuItem.Text = "Registrar Asistencia";
+            this.asistenciaToolStripMenuItem.Text = "Registrar Asistencia Gim";
             this.asistenciaToolStripMenuItem.Click += new System.EventHandler(this.asistenciaToolStripMenuItem_Click);
             // 
             // renovarNuevoToolStripMenuItem
@@ -105,7 +205,7 @@
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar Asistencias";
+            this.consultarToolStripMenuItem.Text = "Consultar Asistencias Gim";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
             // diarioToolStripMenuItem
@@ -266,6 +366,17 @@
         private System.Windows.Forms.ToolStripMenuItem verEntrenadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarEntrenadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarDatosEntrenador;
+        private System.Windows.Forms.ToolStripMenuItem registrarAsistenciaAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem renovarNuevaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem renovarNuevaTarjetaAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarAsistenciasAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem instructoresAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asistenciaInstructorAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoInstructorAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarDatosInstructorAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verInstructoresAHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarInstructorAHToolStripMenuItem;
     }
 }
 

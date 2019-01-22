@@ -1,6 +1,6 @@
 ﻿namespace ProyectoSoftware
 {
-    partial class EliminarEntrenadorGim
+    partial class EliminarInstructorAH
     {
         /// <summary>
         /// Required designer variable.
@@ -91,7 +91,7 @@
             this.tableLayoutPanel2.Controls.Add(this.textBox2, 11, 3);
             this.tableLayoutPanel2.Controls.Add(this.label4, 10, 4);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 11, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(-2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(-2, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 20;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -116,7 +116,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(805, 448);
-            this.tableLayoutPanel2.TabIndex = 28;
+            this.tableLayoutPanel2.TabIndex = 29;
             // 
             // button1
             // 
@@ -131,7 +131,6 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -184,7 +183,7 @@
             this.tableLayoutPanel2.SetRowSpan(this.button4, 2);
             this.button4.Size = new System.Drawing.Size(194, 38);
             this.button4.TabIndex = 21;
-            this.button4.Text = "Eliminar Entrenador";
+            this.button4.Text = "Eliminar Instructor";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -252,7 +251,6 @@
             this.textBox4.Size = new System.Drawing.Size(194, 20);
             this.textBox4.TabIndex = 41;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // textBox3
             // 
@@ -265,8 +263,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(194, 20);
             this.textBox3.TabIndex = 43;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // textBox5
             // 
@@ -279,7 +275,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(194, 20);
             this.textBox5.TabIndex = 44;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label8
             // 
@@ -305,7 +300,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(194, 20);
             this.textBox2.TabIndex = 42;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label4
             // 
@@ -331,16 +325,15 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 37;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // EliminarEntrenadorGim
+            // EliminarInstructorAH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Name = "EliminarEntrenadorGim";
-            this.Text = "EliminarEntrenadorGim";
+            this.Name = "EliminarInstructorAH";
+            this.Text = "EliminarInstructorAH";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -351,12 +344,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;

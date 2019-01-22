@@ -18,3 +18,13 @@ C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proye
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarEntrenadorGim.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.VerEntrenadoresGim.resources
 C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.EliminarEntrenadorGim.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.AsistenciaAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Renovar_NuevoCursoAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.Renovar_NuevaTarjetaAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ConsultarAsistenciasAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.RegistroDiarioAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.AsistenciaInstructorAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.NuevoInstructorAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.ActualizarDatosInstruAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.VerInstructoresAH.resources
+C:\Users\Henry\Documents\Universidad\5to Semestre\Ingenieria en Software I\Proyecto\ProyectoSoftware\ProyectoSoftware\obj\Debug\ProyectoSoftware.EliminarInstructorAH.resources

@@ -114,5 +114,56 @@ namespace ProyectoSoftware
         {
             AbrirFormulario<EliminarEntrenadorGim>();
         }
+
+        private void registrarAsistenciaAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormulario<AsistenciaAH>();
+        }
+
+        private void renovarNuevaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Renovar_NuevoCursoAH>();
+        }
+
+        private void renovarNuevaTarjetaAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Renovar_NuevaTarjetaAH>();
+        }
+
+        private void consultarAsistenciasAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ConsultarAsistenciasAH>();
+        }
+
+        private void diarioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<RegistroDiarioAH>();
+        }
+
+        private void asistenciaInstructorAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<AsistenciaInstructorAH>();
+        }
+
+        private void nuevoInstructorAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<NuevoInstructorAH>();
+        }
+
+        private void actualizarDatosInstructorAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ActualizarDatosInstruAH>();
+        }
+
+        private void verInstructoresAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VerInstructoresAH>();
+        }
+
+        private void eliminarInstructorAHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<EliminarInstructorAH>();
+        }
     }
 }

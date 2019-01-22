@@ -10,28 +10,24 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class DiarioGimnasio : Form
+    public partial class RegistroDiarioAH : Form
     {
-        public DiarioGimnasio()
+        public RegistroDiarioAH()
         {
             InitializeComponent();
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "dd/MM/yyyy HH:mm:ss";
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             dateTimePicker1.Value = DateTime.Now;
-            String dialogo = "Se registrará un Ingreso Diario al Gimnasio del cliente:\n\n" +
+            String dialogo = "Se registrará un Ingreso Diario al Área Húmeda del cliente:\n\n" +
                 "Nombre del Cliente: " + textBox2.Text + " " + textBox7.Text + "\n" +
                 "CI del Cliente: " + textBox1.Text + "\n" +
                 "Fecha: " + dateTimePicker1.Value.ToString() + "\n\n" +
                 "¿Está seguro de realizar esta acción?";
+
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7

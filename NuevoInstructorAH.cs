@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class NuevoEntrenadorGim : Form
+    public partial class NuevoInstructorAH : Form
     {
-        public NuevoEntrenadorGim()
+        public NuevoInstructorAH()
         {
             InitializeComponent();
             dia1.SelectedIndex = 0;
@@ -25,28 +25,25 @@ namespace ProyectoSoftware
             dia8.SelectedIndex = 0;
             dia9.SelectedIndex = 0;
             dia10.SelectedIndex = 0;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NuevoEntrenadorGim_Load(object sender, EventArgs e)
-        {
-
+            dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            radioButton1.Checked = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var checkedButton = groupBox2.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            String tipoMembre = checkedButton.Text;
+            
             String horarios = "";
             bool error = false;
             String causa = "";
 
             //YA NADAAAAAA
 
-            if (!dia1.SelectedItem.Equals("-----------")){
-                
+            if (!dia1.SelectedItem.Equals("-----------"))
+            {
+
                 if (horaInicio1.Text.Equals("Hora Inicio") || horaFin1.Text.Equals("Hora Fin") || horaInicio1.SelectedIndex >= horaFin1.SelectedIndex)
                     error = true;
                 else
@@ -126,15 +123,15 @@ namespace ProyectoSoftware
             }
 
 
-            String dialogo = "Se registrará un nuevo Entrenador de Gimnasio con los siguientes datos:\n\n" +
-                "Nombre del Entrenador: " + textBox4.Text + " " + textBox2.Text + "\n" +
-                "CI del Entrenador: " + textBox1.Text + "\n" +
+            String dialogo = "Se registrará un nuevo Instructor de Curso para el Área Húmeda con los siguientes datos:\n\n" +
+                "Nombre del Instructor: " + textBox4.Text + " " + textBox2.Text + "\n" +
+                "CI del Instructor: " + textBox1.Text + "\n" +
                 "Teléfono: " + textBox3.Text + "\n" +
                 "Dirección: " + textBox5.Text + "\n" +
+                "Nivel de Curso Impartido: " + tipoMembre + "\n" +
                 "En los horarios de:\n" + horarios + "\n" +
                 "Fecha de Registro: " + dateTimePicker3.Text + "\n" +
                 "\n¿Está seguro de realizar esta acción?";
-
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace);
             int countWords = textBox1.Text.Split().Length;
@@ -149,6 +146,7 @@ namespace ProyectoSoftware
                     error = true;
                     break;
                 }
+
             }
 
             if (error == true)
@@ -163,7 +161,7 @@ namespace ProyectoSoftware
                     DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmación", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Nuevo entrenador registrado con éxito.", "Información", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Nuevo Instructor registrado con éxito.", "Información", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -181,7 +179,10 @@ namespace ProyectoSoftware
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox1.TextLength < 13)
+            {
                 new Validar().SoloNumerosSeguidos(e);
+               
+            }
             else
             {
                 new Validar().nadaIngreso(e);
@@ -201,23 +202,28 @@ namespace ProyectoSoftware
             new Validar().SoloLetras(e);
         }
 
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Validar().SoloLetras(e);
+        }
+
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             new Validar().SoloNumerosSeguidos(e);
         }
 
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

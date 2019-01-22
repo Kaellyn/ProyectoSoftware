@@ -45,17 +45,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarDatosInstruAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarDatosInstruAH.Designer.cs">
+      <DependentUpon>ActualizarDatosInstruAH.cs</DependentUpon>
+    </Compile>
     <Compile Include="ActualizarEntrenadorGim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ActualizarEntrenadorGim.Designer.cs">
       <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
     </Compile>
+    <Compile Include="AsistenciaAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciaAH.Designer.cs">
+      <DependentUpon>AsistenciaAH.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsistenciaEntrenadorGim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AsistenciaEntrenadorGim.Designer.cs">
       <DependentUpon>AsistenciaEntrenadorGim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsistenciaInstructorAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistenciaInstructorAH.Designer.cs">
+      <DependentUpon>AsistenciaInstructorAH.cs</DependentUpon>
     </Compile>
     <Compile Include="AsistenciasGimnasio.cs">
       <SubType>Form</SubType>
@@ -68,6 +86,12 @@
     </Compile>
     <Compile Include="Bienvenida.Designer.cs">
       <DependentUpon>Bienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAsistenciasAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAsistenciasAH.Designer.cs">
+      <DependentUpon>ConsultarAsistenciasAH.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarGimnasio.cs">
       <SubType>Form</SubType>
@@ -87,6 +111,12 @@
     <Compile Include="EliminarEntrenadorGim.Designer.cs">
       <DependentUpon>EliminarEntrenadorGim.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarInstructorAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarInstructorAH.Designer.cs">
+      <DependentUpon>EliminarInstructorAH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,13 +129,37 @@
     <Compile Include="NuevoEntrenadorGim.Designer.cs">
       <DependentUpon>NuevoEntrenadorGim.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevoInstructorAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoInstructorAH.Designer.cs">
+      <DependentUpon>NuevoInstructorAH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroDiarioAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroDiarioAH.Designer.cs">
+      <DependentUpon>RegistroDiarioAH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Renovar-NuevaMembresiaGim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Renovar-NuevaMembresiaGim.Designer.cs">
       <DependentUpon>Renovar-NuevaMembresiaGim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renovar-NuevaTarjetaAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renovar-NuevaTarjetaAH.Designer.cs">
+      <DependentUpon>Renovar-NuevaTarjetaAH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renovar-NuevoCursoAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renovar-NuevoCursoAH.Designer.cs">
+      <DependentUpon>Renovar-NuevoCursoAH.cs</DependentUpon>
     </Compile>
     <Compile Include="Validar.cs" />
     <Compile Include="VerEntrenadoresGim.cs">
@@ -114,17 +168,35 @@
     <Compile Include="VerEntrenadoresGim.Designer.cs">
       <DependentUpon>VerEntrenadoresGim.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerInstructoresAH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerInstructoresAH.Designer.cs">
+      <DependentUpon>VerInstructoresAH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarDatosInstruAH.resx">
+      <DependentUpon>ActualizarDatosInstruAH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ActualizarEntrenadorGim.resx">
       <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AsistenciaAH.resx">
+      <DependentUpon>AsistenciaAH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsistenciaEntrenadorGim.resx">
       <DependentUpon>AsistenciaEntrenadorGim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsistenciaInstructorAH.resx">
+      <DependentUpon>AsistenciaInstructorAH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AsistenciasGimnasio.resx">
       <DependentUpon>AsistenciasGimnasio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bienvenida.resx">
       <DependentUpon>Bienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAsistenciasAH.resx">
+      <DependentUpon>ConsultarAsistenciasAH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarGimnasio.resx">
       <DependentUpon>ConsultarGimnasio.cs</DependentUpon>
@@ -135,11 +207,17 @@
     <EmbeddedResource Include="EliminarEntrenadorGim.resx">
       <DependentUpon>EliminarEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarInstructorAH.resx">
+      <DependentUpon>EliminarInstructorAH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoEntrenadorGim.resx">
       <DependentUpon>NuevoEntrenadorGim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoInstructorAH.resx">
+      <DependentUpon>NuevoInstructorAH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,11 +229,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistroDiarioAH.resx">
+      <DependentUpon>RegistroDiarioAH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Renovar-NuevaMembresiaGim.resx">
       <DependentUpon>Renovar-NuevaMembresiaGim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Renovar-NuevaTarjetaAH.resx">
+      <DependentUpon>Renovar-NuevaTarjetaAH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renovar-NuevoCursoAH.resx">
+      <DependentUpon>Renovar-NuevoCursoAH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VerEntrenadoresGim.resx">
       <DependentUpon>VerEntrenadoresGim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerInstructoresAH.resx">
+      <DependentUpon>VerInstructoresAH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

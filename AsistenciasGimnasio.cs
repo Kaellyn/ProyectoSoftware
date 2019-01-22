@@ -74,11 +74,11 @@ namespace ProyectoSoftware
         private void button1_Click_1(object sender, EventArgs e)
         {
             dateTimePicker3.Value = DateTime.Now;
-            String dialogo = "Se registrara la asistencia al Gimnasio del cliente:\n\n" +
-                "Nombre del Cliente: "+textBox2.Text + "\n" +
+            String dialogo = "Se registrará la asistencia al Gimnasio del cliente:\n\n" +
+                "Nombre del Cliente: " + textBox2.Text + "\n" +
                 "CI del Cliente: " + textBox1.Text + "\n" +
                 "Fecha: " + dateTimePicker3.Value.ToString() + "\n\n" +
-                "¿Esta seguro de realizar esta accion?";
+                "¿Está seguro de realizar esta acción?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7
@@ -104,10 +104,10 @@ namespace ProyectoSoftware
             {
                 if (countSpaces <= 0 && countWords == 1)
                 {
-                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmación", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Asistencia Registrada con exito", "Informacion", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Asistencia Registrada con éxito", "Información", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {

@@ -10,18 +10,19 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class AsistenciaEntrenadorGim : Form
+    public partial class AsistenciaInstructorAH : Form
     {
-        public AsistenciaEntrenadorGim()
+        public AsistenciaInstructorAH()
         {
             InitializeComponent();
+
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String dialogo = "Se registrará la asistencia al Gimnasio del entrenador:\n\n" +
+            String dialogo = "Se registrará la asistencia al Área Húmeda del instructor:\n\n" +
                "Nombre del Entrenador: " + textBox2.Text + "\n" +
                "CI del Entrenador: " + textBox1.Text + "\n" +
                "Fecha: " + dateTimePicker3.Text + "\n\n" +
@@ -68,11 +69,6 @@ namespace ProyectoSoftware
 
                 }
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)

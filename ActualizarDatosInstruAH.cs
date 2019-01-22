@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class NuevoEntrenadorGim : Form
+    public partial class ActualizarDatosInstruAH : Form
     {
-        public NuevoEntrenadorGim()
+        public ActualizarDatosInstruAH()
         {
             InitializeComponent();
             dia1.SelectedIndex = 0;
@@ -25,28 +25,25 @@ namespace ProyectoSoftware
             dia8.SelectedIndex = 0;
             dia9.SelectedIndex = 0;
             dia10.SelectedIndex = 0;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NuevoEntrenadorGim_Load(object sender, EventArgs e)
-        {
-
+            dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            radioButton1.Checked = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var checkedButton = groupBox2.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            String tipoMembre = checkedButton.Text;
+
             String horarios = "";
             bool error = false;
             String causa = "";
 
             //YA NADAAAAAA
 
-            if (!dia1.SelectedItem.Equals("-----------")){
-                
+            if (!dia1.SelectedItem.Equals("-----------"))
+            {
+
                 if (horaInicio1.Text.Equals("Hora Inicio") || horaFin1.Text.Equals("Hora Fin") || horaInicio1.SelectedIndex >= horaFin1.SelectedIndex)
                     error = true;
                 else
@@ -126,15 +123,17 @@ namespace ProyectoSoftware
             }
 
 
-            String dialogo = "Se registrará un nuevo Entrenador de Gimnasio con los siguientes datos:\n\n" +
+            String dialogo = "Se actualizarán los datos del Instructor con los siguientes datos:\n\n" +
                 "Nombre del Entrenador: " + textBox4.Text + " " + textBox2.Text + "\n" +
-                "CI del Entrenador: " + textBox1.Text + "\n" +
-                "Teléfono: " + textBox3.Text + "\n" +
-                "Dirección: " + textBox5.Text + "\n" +
-                "En los horarios de:\n" + horarios + "\n" +
-                "Fecha de Registro: " + dateTimePicker3.Text + "\n" +
+                "CI del Entrenador: " + textBox1.Text + "\n\n" +
+                "Los datos antiguos y los actualizados son: \n\n" +
+                "Nombre del Entrenador: " + textBox4.Text + " " + textBox2.Text + "-->" + textBox4.Text + " " + textBox2.Text + "\n" +
+                "CI del Entrenador: " + textBox1.Text + "-->" + textBox1.Text + "\n" +
+                "Telefono: " + textBox3.Text + "-->" + textBox3.Text + "\n" +
+                "Direccion: " + textBox5.Text + "-->" + textBox5.Text + "\n" +
+                "Nivel de Curso: " + tipoMembre + "-->" + tipoMembre + "\n" +
+                "En los horarios de:\n" + horarios + "-->" + horarios + "\n\n" +
                 "\n¿Está seguro de realizar esta acción?";
-
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace);
             int countWords = textBox1.Text.Split().Length;
@@ -149,21 +148,22 @@ namespace ProyectoSoftware
                     error = true;
                     break;
                 }
+
             }
 
             if (error == true)
             {
                 DialogResult dialogResult = MessageBox.Show(causa + ".\n\n" +
-                    "Por favor verifique si todas las horas han sido ingresadas correctamente.", "Error", MessageBoxButtons.OK);
+                    "Por favor verifique que todas las horas han sido ingresadas correctamente.", "Error", MessageBoxButtons.OK);
             }
             else
             {
                 if (countSpaces <= 0 && countWords == 1)
                 {
-                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmación", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Nuevo entrenador registrado con éxito.", "Información", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Datos actualizados con exito.", "Informacion", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -181,7 +181,11 @@ namespace ProyectoSoftware
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (textBox1.TextLength < 13)
+            {
                 new Validar().SoloNumerosSeguidos(e);
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                    button1_Enter(sender, e);
+            }
             else
             {
                 new Validar().nadaIngreso(e);
@@ -189,6 +193,17 @@ namespace ProyectoSoftware
                     " debe ser menor o igual a 13.\n\n" +
                     "Por favor intentelo nuevamente.", "Error", MessageBoxButtons.OK);
             }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            new Validar().SoloNumerosSeguidos(e);
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            new Validar().SoloLetras(e);
         }
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
@@ -201,18 +216,17 @@ namespace ProyectoSoftware
             new Validar().SoloLetras(e);
         }
 
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void button1_Enter(object sender, EventArgs e)
         {
-            new Validar().SoloNumerosSeguidos(e);
-        }
-
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            button1.Focus();
+            if (textBox1.Text.Equals("1"))
+            {
+                textBox2.Text = "Henry Gonzalo";
+                textBox4.Text = "Aguilar Quezada";
+                textBox5.Text = "Carapungo, Ciu. Alegria";
+                textBox3.Text = "099584----";
+                
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoSoftware
 {
-    partial class DiarioGimnasio
+    partial class RegistroDiarioAH
     {
         /// <summary>
         /// Required designer variable.
@@ -78,7 +78,7 @@
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 5, 4);
             this.tableLayoutPanel2.Controls.Add(this.button4, 7, 9);
             this.tableLayoutPanel2.Controls.Add(this.label1, 2, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(-2, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(-3, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 20;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -103,7 +103,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(807, 438);
-            this.tableLayoutPanel2.TabIndex = 27;
+            this.tableLayoutPanel2.TabIndex = 28;
             // 
             // textBox2
             // 
@@ -140,7 +140,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(394, 20);
             this.textBox1.TabIndex = 28;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // button3
@@ -236,14 +235,14 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Nombres:";
             // 
-            // DiarioGimnasio
+            // RegistroDiarioAH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Name = "DiarioGimnasio";
-            this.Text = "DiarioGimnasio";
+            this.Name = "RegistroDiarioAH";
+            this.Text = "RegistroDiarioAH";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -253,15 +252,15 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
     }
 }

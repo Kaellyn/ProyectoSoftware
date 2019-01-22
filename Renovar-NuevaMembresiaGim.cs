@@ -71,13 +71,13 @@ namespace ProyectoSoftware
                 fechaFinalizacion = DateTime.Now.AddMonths(1).ToString();
 
             dateTimePicker3.Value = DateTime.Now;
-            String dialogo = "Se una nueva membresia al Gimnasio con la siguiente informacion:\n\n" +
+            String dialogo = "Se registrará una nueva membresía al Gimnasio con la siguiente información:\n\n" +
                 "Nombres del Cliente: " + textBox2.Text + "\n" +
                 "CI del Cliente: " + textBox1.Text + "\n" +
-                "Tipo de Membresia: " + tipoMembre + "\n" +
+                "Tipo de Membresía: " + tipoMembre + "\n" +
                 "Fecha de Inicio: " + dateTimePicker3.Value.ToString() + "\n" +
-                "Fecha de Finalizacion: " + fechaFinalizacion + "\n\n" +
-                "¿Esta seguro de realizar esta accion?";
+                "Fecha de Finalización: " + fechaFinalizacion + "\n\n" +
+                "¿Está seguro de realizar esta acción?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7

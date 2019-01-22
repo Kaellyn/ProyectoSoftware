@@ -10,22 +10,37 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class AsistenciaEntrenadorGim : Form
+    public partial class Renovar_NuevaTarjetaAH : Form
     {
-        public AsistenciaEntrenadorGim()
+        public Renovar_NuevaTarjetaAH()
         {
             InitializeComponent();
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            radioButton2.Checked = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String dialogo = "Se registrará la asistencia al Gimnasio del entrenador:\n\n" +
-               "Nombre del Entrenador: " + textBox2.Text + "\n" +
-               "CI del Entrenador: " + textBox1.Text + "\n" +
-               "Fecha: " + dateTimePicker3.Text + "\n\n" +
-               "¿Está seguro de realizar esta acción?";
+            var checkedButton = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            String tipoMembre = checkedButton.Text;
+            String fechaFinalizacion = DateTime.Now.AddMonths(3).ToString(); ;
+            if (checkedButton.Text.ToString().Equals("Mensual"))
+                fechaFinalizacion = DateTime.Now.AddMonths(1).ToString();
+
+            dateTimePicker3.Value = DateTime.Now;
+            String dialogo = "Se registrará una nueva tarjeta para el Área Húmeda con la siguiente información:\n\n" +
+                "Nombres del Cliente: " + textBox2.Text + "\n" +
+                "CI del Cliente: " + textBox1.Text + "\n" +
+                "Tipo de Membresia: " + tipoMembre + "\n" +
+                "Fecha de Inicio: " + dateTimePicker3.Value.ToString() + "\n" +
+                "Fecha de Finalizacion: " + fechaFinalizacion + "\n\n" +
+                "¿Esta seguro de realizar esta accion?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7
@@ -51,10 +66,10 @@ namespace ProyectoSoftware
             {
                 if (countSpaces <= 0 && countWords == 1)
                 {
-                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmación", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Asistencia Registrada con éxito", "Información", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Tarjeta Registrada con exito", "Informacion", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -65,19 +80,19 @@ namespace ProyectoSoftware
                 {
                     causa = "cedula";
                     DialogResult dialogResult = MessageBox.Show("Ingreso de " + causa + " incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
-
                 }
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Enter(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            button1.Focus();
+            if (textBox1.Text.Equals("1"))
+            {
+                textBox2.Text = "Aguilar Quezada Henry Gonzalo";
+                textBox4.Text = "Carapungo, Ciu. Alegria";
+                textBox3.Text = "099584----";
+            }
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -94,17 +109,6 @@ namespace ProyectoSoftware
                 DialogResult dialogResult = MessageBox.Show("El numero de caracteres de la cedula" +
                     " debe ser menor o igual a 13.\n\n" +
                     "Por favor intentelo nuevamente.", "Error", MessageBoxButtons.OK);
-            }
-        }
-
-        private void button1_Enter(object sender, EventArgs e)
-        {
-            button1.Focus();
-            if (textBox1.Text.Equals("1"))
-            {
-                textBox2.Text = "Aguilar Quezada Henry Gonzalo";
-                textBox4.Text = "Carapungo, Ciu. Alegria";
-                textBox3.Text = "099584----";
             }
         }
     }
