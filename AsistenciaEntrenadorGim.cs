@@ -15,38 +15,96 @@ namespace ProyectoSoftware
         public AsistenciaEntrenadorGim()
         {
             InitializeComponent();
+            dateTimePicker3.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String dialogo = "Se registrara la asistencia al Gimnasio del entrenador:\n\n\n" +
-                "Nombre: " + textBox2.Text + "\n" +
-                "CI: " + textBox1.Text + "\n" +
-                "Fecha: " + dateTimePicker3.Text + "\n" +
-                "En el horario de: " + textBox5.Text + "\n\n" +
+            String dialogo = "Se registrara la asistencia al Gimnasio del entrenador:\n\n" +
+                "Nombre del Entrenador: " + textBox2.Text + "\n" +
+                "CI del Entrenador: " + textBox1.Text + "\n" +
+                "Fecha: " + dateTimePicker3.Text + "\n\n" +
                 "¿Esta seguro de realizar esta accion?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
             int countWords = textBox1.Text.Split().Length; // 7
 
-
-            if (countSpaces <= 0 && countWords == 1)
+            String causa = "";
+            bool error = false;
+            foreach (Control tb in tableLayoutPanel1.Controls)
             {
-                DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
+                if (tb is TextBox && ((TextBox)tb).Text.Equals(""))
                 {
-                    //do something
+                    causa = error == true ? causa + "y Existe un campo vacio" : "Existe un campo vacio";
+                    error = true;
+                    break;
                 }
-                else if (dialogResult == DialogResult.No)
-                {
-                    //do something else
-                }
+
+            }
+            if (error == true)
+            {
+                DialogResult dialogResult = MessageBox.Show(causa + ".\n\n" +
+                    "Por favor verifique que todos los campos han sido ingresados correctamente.", "Error", MessageBoxButtons.OK);
             }
             else
             {
-                String causa = "cedula";
-                DialogResult dialogResult = MessageBox.Show("Ingreso de " + causa + " incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
+                if (countSpaces <= 0 && countWords == 1)
+                {
+                    DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        dialogResult = MessageBox.Show("Asistencia Registrada con exito", "Informacion", MessageBoxButtons.OK);
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        //do something else
+                    }
+                }
+                else
+                {
+                    causa = "cedula";
+                    DialogResult dialogResult = MessageBox.Show("Ingreso de " + causa + " incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
 
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox1.TextLength < 13)
+            {
+                new Validar().SoloNumerosSeguidos(e);
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                    button1_Enter(sender, e);
+            }
+            else
+            {
+                new Validar().nadaIngreso(e);
+                DialogResult dialogResult = MessageBox.Show("El numero de caracteres de la cedula" +
+                    " debe ser menor o igual a 13.\n\n" +
+                    "Por favor intentelo nuevamente.", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            button1.Focus();
+            if (textBox1.Text.Equals("1"))
+            {
+                textBox2.Text = "Aguilar Quezada Henry Gonzalo";
+                textBox4.Text = "Carapungo, Ciu. Alegria";
+                textBox3.Text = "099584----";
             }
         }
     }

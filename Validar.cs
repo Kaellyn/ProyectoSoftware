@@ -96,6 +96,30 @@ namespace ProyectoSoftware
                // MessageBox.Show("Solo numeros o numeros con punto decimal");
             }
         }
+        public void nadaIngreso(KeyPressEventArgs v)
+        {
+            if (Char.IsDigit(v.KeyChar))
+            {
+                v.Handled = true;
+            }
+            else if (Char.IsSeparator(v.KeyChar))
+            {
+                v.Handled = true;
+            }
+            else if (Char.IsControl(v.KeyChar))
+            {
+                v.Handled = true;
+            }
+            else if (v.KeyChar.ToString().Equals("."))
+            {
+                v.Handled = true;
+            }
+            else
+            {
+                v.Handled = true;
+                // MessageBox.Show("Solo numeros o numeros con punto decimal");
+            }
+        }
 
 
 

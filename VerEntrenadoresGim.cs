@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class ConsultarGimnasio : Form
+    public partial class VerEntrenadoresGim : Form
     {
-        public ConsultarGimnasio()
+        public VerEntrenadoresGim()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -49,7 +44,7 @@ namespace ProyectoSoftware
             {
                 if (countSpaces <= 3 && countWords <= 4)
                 {
-                    
+
                 }
                 else
                 {
@@ -57,6 +52,11 @@ namespace ProyectoSoftware
                     DialogResult dialogResult = MessageBox.Show("Ingreso de " + causa + " incorrecto.\n\nPor favor ingreselo nuevamente.", "Error", MessageBoxButtons.OK);
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

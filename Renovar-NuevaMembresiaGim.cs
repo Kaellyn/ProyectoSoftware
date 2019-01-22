@@ -10,48 +10,19 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class AsistenciasGimnasio : Form
+    public partial class Renovar_NuevaSuscripcion : Form
     {
-        public AsistenciasGimnasio()
+        public Renovar_NuevaSuscripcion()
         {
             InitializeComponent();
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            radioButton1.Checked = true;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AsistenciasGimnasio_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,13 +42,41 @@ namespace ProyectoSoftware
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var checkedButton = groupBox1.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
+            String tipoMembre=checkedButton.Text;
+            String fechaFinalizacion= DateTime.Now.AddMonths(3).ToString(); ;
+            if (checkedButton.Text.ToString().Equals("Mensual"))
+                fechaFinalizacion = DateTime.Now.AddMonths(1).ToString();
+
             dateTimePicker3.Value = DateTime.Now;
-            String dialogo = "Se registrara la asistencia al Gimnasio del cliente:\n\n" +
-                "Nombre del Cliente: "+textBox2.Text + "\n" +
+            String dialogo = "Se una nueva membresia al Gimnasio con la siguiente informacion:\n\n" +
+                "Nombres del Cliente: " + textBox2.Text + "\n" +
                 "CI del Cliente: " + textBox1.Text + "\n" +
-                "Fecha: " + dateTimePicker3.Value.ToString() + "\n\n" +
+                "Tipo de Membresia: " + tipoMembre + "\n" +
+                "Fecha de Inicio: " + dateTimePicker3.Value.ToString() + "\n" +
+                "Fecha de Finalizacion: " + fechaFinalizacion + "\n\n" +
                 "¿Esta seguro de realizar esta accion?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace); // 6
@@ -107,7 +106,7 @@ namespace ProyectoSoftware
                     DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Asistencia Registrada con exito", "Informacion", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Membresia Registrada con exito", "Informacion", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -122,16 +121,6 @@ namespace ProyectoSoftware
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button1_Enter(object sender, EventArgs e)
         {
             button1.Focus();
@@ -140,13 +129,7 @@ namespace ProyectoSoftware
                 textBox2.Text = "Aguilar Quezada Henry Gonzalo";
                 textBox4.Text = "Carapungo, Ciu. Alegria";
                 textBox3.Text = "099584----";
-                radioButton1.Checked = true;
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

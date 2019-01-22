@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoSoftware
 {
-    public partial class NuevoEntrenadorGim : Form
+    public partial class ActualizarEntrenadorGim : Form
     {
-        public NuevoEntrenadorGim()
+        public ActualizarEntrenadorGim()
         {
             InitializeComponent();
             dia1.SelectedIndex = 0;
@@ -26,7 +26,7 @@ namespace ProyectoSoftware
             dia9.SelectedIndex = 0;
             dia10.SelectedIndex = 0;
 
-            
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,8 +47,9 @@ namespace ProyectoSoftware
 
             //YA NADAAAAAA
 
-            if (!dia1.SelectedItem.Equals("-----------")){
-                
+            if (!dia1.SelectedItem.Equals("-----------"))
+            {
+
                 if (horaInicio1.Text.Equals("Hora Inicio") || horaFin1.Text.Equals("Hora Fin") || horaInicio1.SelectedIndex >= horaFin1.SelectedIndex)
                     error = true;
                 else
@@ -128,14 +129,16 @@ namespace ProyectoSoftware
             }
 
 
-            String dialogo = "Se registrará un nuevo Entrenador de Gimnasio con los siguientes datos:\n\n\n" +
+            String dialogo = "Se actualizarán los datos del Entrenador de Gimnasio:\n\n" +
                 "Nombre del Entrenador: " + textBox4.Text + " " + textBox2.Text + "\n" +
-                "CI del Entrenador: " + textBox1.Text + "\n" +
-                "Telefono: " + textBox3.Text + "\n" +
-                "Direccion: " + textBox5.Text + "\n" +
-                "En los horarios de:\n" + horarios + "\n" +
-                "Fecha de Registro: " + dateTimePicker3.Text + "\n" +
-                "\n¿Esta seguro de realizar esta accion?";
+                "CI del Entrenador: " + textBox1.Text + "\n\n" +
+                "Los datos antiguos y los actualizados son: \n\n" +
+                "Nombre del Entrenador: " + textBox4.Text + " " + textBox2.Text + "-->" + textBox2.Text + "\n" +
+                "CI del Entrenador: " + textBox1.Text + "-->" + textBox2.Text + "\n" +
+                "Telefono: " + textBox3.Text + "-->" + textBox2.Text + "\n" +
+                "Direccion: " + textBox5.Text + "-->" + textBox2.Text + "\n" +
+                "En los horarios de:\n" + horarios + "-->" + textBox2.Text + "\n\n" +
+                "\n¿Está seguro de realizar esta acción?";
 
             int countSpaces = textBox1.Text.Count(Char.IsWhiteSpace);
             int countWords = textBox1.Text.Split().Length;
@@ -165,7 +168,7 @@ namespace ProyectoSoftware
                     DialogResult dialogResult = MessageBox.Show(dialogo, "Confirmacion", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        dialogResult = MessageBox.Show("Nuevo entrenador registrado con exito.", "Informacion", MessageBoxButtons.OK);
+                        dialogResult = MessageBox.Show("Datos actualizados con exito.", "Informacion", MessageBoxButtons.OK);
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -217,9 +220,47 @@ namespace ProyectoSoftware
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox1_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (textBox1.TextLength < 13)
+                new Validar().SoloNumerosSeguidos(e);
+            else
+            {
+                new Validar().nadaIngreso(e);
+                DialogResult dialogResult = MessageBox.Show("El numero de caracteres de la cedula" +
+                    " debe ser menor o igual a 13.\n\n" +
+                    "Por favor intentelo nuevamente.", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void textBox4_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            new Validar().SoloLetras(e);
+        }
+
+        private void textBox2_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+            new Validar().SoloLetras(e);
+        }
+
+        private void textBox5_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+            new Validar().SoloLetras(e);
+        }
+
+        private void textBox3_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+
+            new Validar().SoloNumerosSeguidos(e);
         }
     }
 }

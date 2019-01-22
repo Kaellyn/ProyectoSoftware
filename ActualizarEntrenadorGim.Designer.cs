@@ -1,6 +1,6 @@
 ﻿namespace ProyectoSoftware
 {
-    partial class NuevoEntrenadorGim
+    partial class ActualizarEntrenadorGim
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker3, 4, 15);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, -1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(-2, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 20;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -144,7 +144,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(804, 450);
-            this.tableLayoutPanel1.TabIndex = 26;
+            this.tableLayoutPanel1.TabIndex = 27;
             // 
             // label8
             // 
@@ -172,7 +172,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Atras";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -212,8 +212,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress_1);
             // 
             // label1
             // 
@@ -238,7 +237,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(194, 20);
             this.textBox4.TabIndex = 31;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress_1);
             // 
             // label3
             // 
@@ -263,7 +262,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(194, 20);
             this.textBox2.TabIndex = 32;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress_1);
             // 
             // textBox3
             // 
@@ -275,7 +274,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(194, 20);
             this.textBox3.TabIndex = 33;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress_1);
             // 
             // textBox5
             // 
@@ -287,7 +286,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(194, 20);
             this.textBox5.TabIndex = 34;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress_1);
             // 
             // label10
             // 
@@ -1033,7 +1032,6 @@
             this.dia1.Name = "dia1";
             this.dia1.Size = new System.Drawing.Size(100, 21);
             this.dia1.TabIndex = 0;
-            this.dia1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -1060,15 +1058,14 @@
             this.dateTimePicker3.Size = new System.Drawing.Size(194, 20);
             this.dateTimePicker3.TabIndex = 29;
             // 
-            // NuevoEntrenadorGim
+            // ActualizarEntrenadorGim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "NuevoEntrenadorGim";
-            this.Text = "NuevoEntrenadorGim";
-            this.Load += new System.EventHandler(this.NuevoEntrenadorGim_Load);
+            this.Name = "ActualizarEntrenadorGim";
+            this.Text = "ActualizarEntrenadorGim";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1079,27 +1076,19 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox dia1;
-        private System.Windows.Forms.ComboBox horaFin1;
-        private System.Windows.Forms.ComboBox horaInicio1;
-        private System.Windows.Forms.ComboBox horaFin6;
-        private System.Windows.Forms.ComboBox horaInicio6;
-        private System.Windows.Forms.ComboBox dia6;
         private System.Windows.Forms.ComboBox horaFin10;
         private System.Windows.Forms.ComboBox horaInicio10;
         private System.Windows.Forms.ComboBox dia10;
@@ -1124,5 +1113,13 @@
         private System.Windows.Forms.ComboBox horaFin2;
         private System.Windows.Forms.ComboBox horaInicio2;
         private System.Windows.Forms.ComboBox dia2;
+        private System.Windows.Forms.ComboBox horaFin6;
+        private System.Windows.Forms.ComboBox horaInicio6;
+        private System.Windows.Forms.ComboBox dia6;
+        private System.Windows.Forms.ComboBox horaFin1;
+        private System.Windows.Forms.ComboBox horaInicio1;
+        private System.Windows.Forms.ComboBox dia1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

@@ -34,13 +34,12 @@
             this.gimansioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renovarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suscripcionMensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tarjetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoEntrenadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizarDatosEntrenador = new System.Windows.Forms.ToolStripMenuItem();
             this.verEntrenadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarEntrenadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +50,6 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.actualizarDatosEntrenador = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,44 +90,29 @@
             // asistenciaToolStripMenuItem
             // 
             this.asistenciaToolStripMenuItem.Name = "asistenciaToolStripMenuItem";
-            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.asistenciaToolStripMenuItem.Text = "Asistencia";
+            this.asistenciaToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.asistenciaToolStripMenuItem.Text = "Registrar Asistencia";
             this.asistenciaToolStripMenuItem.Click += new System.EventHandler(this.asistenciaToolStripMenuItem_Click);
             // 
             // renovarNuevoToolStripMenuItem
             // 
-            this.renovarNuevoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.suscripcionMensualToolStripMenuItem,
-            this.tarjetaToolStripMenuItem});
             this.renovarNuevoToolStripMenuItem.Name = "renovarNuevoToolStripMenuItem";
-            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nuevo";
+            this.renovarNuevoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.renovarNuevoToolStripMenuItem.Text = "Renovar/Nueva Membresia";
             this.renovarNuevoToolStripMenuItem.Click += new System.EventHandler(this.renovarNuevoToolStripMenuItem_Click);
-            // 
-            // suscripcionMensualToolStripMenuItem
-            // 
-            this.suscripcionMensualToolStripMenuItem.Name = "suscripcionMensualToolStripMenuItem";
-            this.suscripcionMensualToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.suscripcionMensualToolStripMenuItem.Text = "Suscripcion Mensual";
-            // 
-            // tarjetaToolStripMenuItem
-            // 
-            this.tarjetaToolStripMenuItem.Name = "tarjetaToolStripMenuItem";
-            this.tarjetaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.tarjetaToolStripMenuItem.Text = "Tarjeta";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar Asistencias";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
             // diarioToolStripMenuItem
             // 
             this.diarioToolStripMenuItem.Name = "diarioToolStripMenuItem";
-            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.diarioToolStripMenuItem.Text = "Diario";
+            this.diarioToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.diarioToolStripMenuItem.Text = "Registro Diario Gim";
             this.diarioToolStripMenuItem.Click += new System.EventHandler(this.diarioToolStripMenuItem_Click);
             // 
             // entrenamientoToolStripMenuItem
@@ -141,7 +124,7 @@
             this.verEntrenadoresToolStripMenuItem,
             this.eliminarEntrenadorToolStripMenuItem});
             this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
-            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.entrenamientoToolStripMenuItem.Text = "Entrenadores";
             // 
             // registrarAsistenciaToolStripMenuItem
@@ -158,17 +141,26 @@
             this.nuevoEntrenadorToolStripMenuItem.Text = "Nuevo Entrenador Gim";
             this.nuevoEntrenadorToolStripMenuItem.Click += new System.EventHandler(this.nuevoEntrenadorToolStripMenuItem_Click);
             // 
+            // actualizarDatosEntrenador
+            // 
+            this.actualizarDatosEntrenador.Name = "actualizarDatosEntrenador";
+            this.actualizarDatosEntrenador.Size = new System.Drawing.Size(245, 22);
+            this.actualizarDatosEntrenador.Text = "Actualizar Datos Entrenador Gim";
+            this.actualizarDatosEntrenador.Click += new System.EventHandler(this.actualizarDatosEntrenador_Click);
+            // 
             // verEntrenadoresToolStripMenuItem
             // 
             this.verEntrenadoresToolStripMenuItem.Name = "verEntrenadoresToolStripMenuItem";
             this.verEntrenadoresToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.verEntrenadoresToolStripMenuItem.Text = "Ver Entrenadores Gim";
+            this.verEntrenadoresToolStripMenuItem.Click += new System.EventHandler(this.verEntrenadoresToolStripMenuItem_Click);
             // 
             // eliminarEntrenadorToolStripMenuItem
             // 
             this.eliminarEntrenadorToolStripMenuItem.Name = "eliminarEntrenadorToolStripMenuItem";
             this.eliminarEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.eliminarEntrenadorToolStripMenuItem.Text = "Eliminar Entrenador Gim";
+            this.eliminarEntrenadorToolStripMenuItem.Click += new System.EventHandler(this.eliminarEntrenadorToolStripMenuItem_Click);
             // 
             // administracionDelSistemaToolStripMenuItem
             // 
@@ -234,12 +226,6 @@
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
-            // actualizarDatosEntrenador
-            // 
-            this.actualizarDatosEntrenador.Name = "actualizarDatosEntrenador";
-            this.actualizarDatosEntrenador.Size = new System.Drawing.Size(245, 22);
-            this.actualizarDatosEntrenador.Text = "Actualizar Datos Entrenador Gim";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,8 +250,6 @@
         private System.Windows.Forms.ToolStripMenuItem gimansioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renovarNuevoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem suscripcionMensualToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tarjetaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem entrenamientoToolStripMenuItem;

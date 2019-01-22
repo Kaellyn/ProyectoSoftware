@@ -45,27 +45,24 @@ namespace ProyectoSoftware
 
         private void asistenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-           
-            this.WindowState = FormWindowState.Maximized;
-            AsistenciasGimnasio asisGim = new AsistenciasGimnasio();
-            asisGim.TopLevel = false;
-            asisGim.Dock = DockStyle.Fill;
-            asisGim.AutoSize = false;
-            asisGim.Anchor = AnchorStyles.Right | AnchorStyles.Left| AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(asisGim);
-            this.panelContenedor.Tag = asisGim;
-            asisGim.Show();
-            
+            AbrirFormulario<AsistenciasGimnasio>();
         }
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
             Form formulario;
             formulario = panelContenedor.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
             //si el formulario/instancia no existe
-            if (formulario == null)
-            {
+            
+         //       this.WindowState = FormWindowState.Maximized;
+
+                Bienvenida bienvenida = new Bienvenida();
+                bienvenida.TopLevel = false;
+                bienvenida.Dock = DockStyle.Fill;
+                this.panelContenedor.Controls.Add(bienvenida);
+                this.panelContenedor.Tag = bienvenida;
+                bienvenida.Show();
+                bienvenida.BringToFront();
+
                 formulario = new MiForm();
                 formulario.TopLevel = false;
                 formulario.FormBorderStyle = FormBorderStyle.None;
@@ -75,94 +72,47 @@ namespace ProyectoSoftware
                 formulario.Show();
                 formulario.BringToFront();
                 //formulario.FormClosed += new FormClosedEventHandler(CloseForms);
-            }
-            //si el formulario/instancia existe
-            else
-            {
-                formulario.BringToFront();
-            }
+          
         }
 
         private void renovarNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-
-            this.WindowState = FormWindowState.Maximized;
-            Renovar_NuevaSuscripcion renovar = new Renovar_NuevaSuscripcion();
-            renovar.TopLevel = false;
-            renovar.Dock = DockStyle.Fill;
-            renovar.AutoSize = false;
-            renovar.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(renovar);
-            this.panelContenedor.Tag = renovar;
-            renovar.Show();
+            AbrirFormulario<Renovar_NuevaSuscripcion>();
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-
-            this.WindowState = FormWindowState.Maximized;
-            ConsultarGimnasio consultar = new ConsultarGimnasio();
-            consultar.TopLevel = false;
-            consultar.Dock = DockStyle.Fill;
-            consultar.AutoSize = false;
-            consultar.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(consultar);
-            this.panelContenedor.Tag = consultar;
-            consultar.Show();
+            AbrirFormulario<ConsultarGimnasio>();
         }
 
         private void diarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-
-            this.WindowState = FormWindowState.Maximized;
-            DiarioGimnasio diario = new DiarioGimnasio();
-            diario.TopLevel = false;
-            diario.Dock = DockStyle.Fill;
-            diario.AutoSize = false;
-            diario.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(diario);
-            this.panelContenedor.Tag = diario;
-            diario.Show();
+            AbrirFormulario<DiarioGimnasio>();
         }
 
         private void registrarAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-
-            this.WindowState = FormWindowState.Maximized;
-            AsistenciaEntrenadorGim asistenciaEntrenadorGim = new AsistenciaEntrenadorGim();
-            asistenciaEntrenadorGim.TopLevel = false;
-            asistenciaEntrenadorGim.Dock = DockStyle.Fill;
-            asistenciaEntrenadorGim.AutoSize = false;
-            asistenciaEntrenadorGim.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(asistenciaEntrenadorGim);
-            this.panelContenedor.Tag = asistenciaEntrenadorGim;
-            asistenciaEntrenadorGim.Show();
-
+            AbrirFormulario<AsistenciaEntrenadorGim>();
         }
 
         private void nuevoEntrenadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
+            AbrirFormulario<NuevoEntrenadorGim>();
+        }
 
-            this.WindowState = FormWindowState.Maximized;
-            NuevoEntrenadorGim nuevoEntrenadorGim = new NuevoEntrenadorGim();
-            nuevoEntrenadorGim.TopLevel = false;
-            nuevoEntrenadorGim.Dock = DockStyle.Fill;
-            nuevoEntrenadorGim.AutoSize = false;
-            nuevoEntrenadorGim.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-            this.panelContenedor.Controls.Add(nuevoEntrenadorGim);
-            this.panelContenedor.Tag = nuevoEntrenadorGim;
-            nuevoEntrenadorGim.Show();
+        private void actualizarDatosEntrenador_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ActualizarEntrenadorGim>();
+        }
+
+        private void verEntrenadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<VerEntrenadoresGim>();
+        }
+
+        private void eliminarEntrenadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<EliminarEntrenadorGim>();
         }
     }
 }

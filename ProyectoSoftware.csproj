@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarEntrenadorGim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarEntrenadorGim.Designer.cs">
+      <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsistenciaEntrenadorGim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     <Compile Include="DiarioGimnasio.Designer.cs">
       <DependentUpon>DiarioGimnasio.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarEntrenadorGim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEntrenadorGim.Designer.cs">
+      <DependentUpon>EliminarEntrenadorGim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,13 +101,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renovar-NuevaSuscripcion.cs">
+    <Compile Include="Renovar-NuevaMembresiaGim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Renovar-NuevaSuscripcion.Designer.cs">
-      <DependentUpon>Renovar-NuevaSuscripcion.cs</DependentUpon>
+    <Compile Include="Renovar-NuevaMembresiaGim.Designer.cs">
+      <DependentUpon>Renovar-NuevaMembresiaGim.cs</DependentUpon>
     </Compile>
     <Compile Include="Validar.cs" />
+    <Compile Include="VerEntrenadoresGim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerEntrenadoresGim.Designer.cs">
+      <DependentUpon>VerEntrenadoresGim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarEntrenadorGim.resx">
+      <DependentUpon>ActualizarEntrenadorGim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsistenciaEntrenadorGim.resx">
       <DependentUpon>AsistenciaEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DiarioGimnasio.resx">
       <DependentUpon>DiarioGimnasio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEntrenadorGim.resx">
+      <DependentUpon>EliminarEntrenadorGim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -127,8 +151,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Renovar-NuevaSuscripcion.resx">
-      <DependentUpon>Renovar-NuevaSuscripcion.cs</DependentUpon>
+    <EmbeddedResource Include="Renovar-NuevaMembresiaGim.resx">
+      <DependentUpon>Renovar-NuevaMembresiaGim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerEntrenadoresGim.resx">
+      <DependentUpon>VerEntrenadoresGim.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -21,5 +21,10 @@ namespace ProyectoSoftware
         {
 
         }
+
+        private void Bienvenida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

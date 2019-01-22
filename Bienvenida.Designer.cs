@@ -40,6 +40,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Bienvenida";
             this.Text = "Bienvenida";
+            this.Load += new System.EventHandler(this.Bienvenida_Load);
             this.ResumeLayout(false);
 
         }
