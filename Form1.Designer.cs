@@ -51,6 +51,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.actualizarDatosEntrenador = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,37 +137,38 @@
             this.entrenamientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarAsistenciaToolStripMenuItem,
             this.nuevoEntrenadorToolStripMenuItem,
+            this.actualizarDatosEntrenador,
             this.verEntrenadoresToolStripMenuItem,
             this.eliminarEntrenadorToolStripMenuItem});
             this.entrenamientoToolStripMenuItem.Name = "entrenamientoToolStripMenuItem";
             this.entrenamientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.entrenamientoToolStripMenuItem.Text = "Entrenamiento";
+            this.entrenamientoToolStripMenuItem.Text = "Entrenadores";
             // 
             // registrarAsistenciaToolStripMenuItem
             // 
             this.registrarAsistenciaToolStripMenuItem.Name = "registrarAsistenciaToolStripMenuItem";
-            this.registrarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarAsistenciaToolStripMenuItem.Text = "Registrar Asistencia";
+            this.registrarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.registrarAsistenciaToolStripMenuItem.Text = "Asistencia Entrenador Gim";
             this.registrarAsistenciaToolStripMenuItem.Click += new System.EventHandler(this.registrarAsistenciaToolStripMenuItem_Click);
             // 
             // nuevoEntrenadorToolStripMenuItem
             // 
             this.nuevoEntrenadorToolStripMenuItem.Name = "nuevoEntrenadorToolStripMenuItem";
-            this.nuevoEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevoEntrenadorToolStripMenuItem.Text = "Nuevo Entrenador";
+            this.nuevoEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.nuevoEntrenadorToolStripMenuItem.Text = "Nuevo Entrenador Gim";
             this.nuevoEntrenadorToolStripMenuItem.Click += new System.EventHandler(this.nuevoEntrenadorToolStripMenuItem_Click);
             // 
             // verEntrenadoresToolStripMenuItem
             // 
             this.verEntrenadoresToolStripMenuItem.Name = "verEntrenadoresToolStripMenuItem";
-            this.verEntrenadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verEntrenadoresToolStripMenuItem.Text = "Ver Entrenadores";
+            this.verEntrenadoresToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.verEntrenadoresToolStripMenuItem.Text = "Ver Entrenadores Gim";
             // 
             // eliminarEntrenadorToolStripMenuItem
             // 
             this.eliminarEntrenadorToolStripMenuItem.Name = "eliminarEntrenadorToolStripMenuItem";
-            this.eliminarEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eliminarEntrenadorToolStripMenuItem.Text = "Eliminar Entrenador";
+            this.eliminarEntrenadorToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.eliminarEntrenadorToolStripMenuItem.Text = "Eliminar Entrenador Gim";
             // 
             // administracionDelSistemaToolStripMenuItem
             // 
@@ -232,6 +234,12 @@
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
+            // actualizarDatosEntrenador
+            // 
+            this.actualizarDatosEntrenador.Name = "actualizarDatosEntrenador";
+            this.actualizarDatosEntrenador.Size = new System.Drawing.Size(245, 22);
+            this.actualizarDatosEntrenador.Text = "Actualizar Datos Entrenador Gim";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,6 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem nuevoEntrenadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verEntrenadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarEntrenadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actualizarDatosEntrenador;
     }
 }
 

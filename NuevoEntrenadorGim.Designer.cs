@@ -41,7 +41,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.horaFin10 = new System.Windows.Forms.ComboBox();
             this.horaInicio10 = new System.Windows.Forms.ComboBox();
@@ -74,6 +73,7 @@
             this.horaInicio1 = new System.Windows.Forms.ComboBox();
             this.dia1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -299,18 +299,6 @@
             this.label10.Size = new System.Drawing.Size(114, 22);
             this.label10.TabIndex = 25;
             this.label10.Text = "Fecha de Registro";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker3, 5);
-            this.dateTimePicker3.Enabled = false;
-            this.dateTimePicker3.Location = new System.Drawing.Point(163, 333);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(194, 20);
-            this.dateTimePicker3.TabIndex = 29;
             // 
             // groupBox1
             // 
@@ -1057,6 +1045,18 @@
             this.label2.Size = new System.Drawing.Size(74, 22);
             this.label2.TabIndex = 13;
             this.label2.Text = "Cedula";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.dateTimePicker3, 5);
+            this.dateTimePicker3.Enabled = false;
+            this.dateTimePicker3.Location = new System.Drawing.Point(163, 333);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(194, 20);
+            this.dateTimePicker3.TabIndex = 29;
             // 
             // NuevoEntrenadorGim
             // 
